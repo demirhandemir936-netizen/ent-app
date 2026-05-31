@@ -2,10 +2,17 @@ import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { Pressable, ScrollView, Text, View } from "react-native";
 
-const otologyTopics = [
+type OtologyTopic = {
+  title: string;
+  description: string;
+  route?: "/chronic-otitis-media";
+};
+
+const otologyTopics: OtologyTopic[] = [
   {
     title: "Kronik Otitis Media",
     description: "Tanı, sınıflama ve cerrahi yaklaşım",
+    route: "/chronic-otitis-media",
   },
   {
     title: "Kolesteatom",
@@ -34,6 +41,7 @@ export default function OtologyScreen() {
     <ScrollView
       className="flex-1 bg-slate-50"
       contentContainerClassName="px-5 pb-10 pt-16"
+      showsVerticalScrollIndicator={false}
     >
       <Pressable
         onPress={() => router.back()}
@@ -56,8 +64,14 @@ export default function OtologyScreen() {
 
       <View className="mt-8 gap-3">
         {otologyTopics.map((topic) => (
-          <View
+          <Pressable
             key={topic.title}
+            disabled={!topic.route}
+            onPress={() => {
+              if (topic.route) {
+                router.push(topic.route);
+              }
+            }}
             className="flex-row items-center rounded-2xl border border-slate-200 bg-white p-4"
           >
             <View className="flex-1">
@@ -71,7 +85,7 @@ export default function OtologyScreen() {
             </View>
 
             <Ionicons name="chevron-forward" size={19} color="#94A3B8" />
-          </View>
+          </Pressable>
         ))}
       </View>
     </ScrollView>
