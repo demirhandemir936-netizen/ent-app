@@ -17,15 +17,22 @@ export default function HomeScreen() {
         Klinik konulara ve ders notlarına hızlı erişim.
       </Text>
 
-      <View className="mt-8 rounded-3xl bg-teal-700 p-6">
-        <View className="flex-row items-center">
-          <View className="rounded-2xl bg-teal-600 p-3">
-            <Ionicons name="book-outline" size={22} color="#FFFFFF" />
+      <Pressable
+        onPress={() => router.push("/chronic-otitis-media")}
+        className="mt-8 rounded-3xl bg-teal-700 p-6"
+      >
+        <View className="flex-row items-center justify-between">
+          <View className="flex-row items-center">
+            <View className="rounded-2xl bg-teal-600 p-3">
+              <Ionicons name="book-outline" size={22} color="#FFFFFF" />
+            </View>
+
+            <Text className="ml-3 text-sm font-medium text-teal-100">
+              Öne Çıkan Konu
+            </Text>
           </View>
 
-          <Text className="ml-3 text-sm font-medium text-teal-100">
-            Öne Çıkan Konu
-          </Text>
+          <Ionicons name="chevron-forward" size={20} color="#CCFBF1" />
         </View>
 
         <Text className="mt-5 text-xl font-bold text-white">
@@ -35,7 +42,7 @@ export default function HomeScreen() {
         <Text className="mt-3 text-sm leading-6 text-teal-50">
           Tanı, sınıflama, cerrahi yaklaşım ve güncel bilgiler.
         </Text>
-      </View>
+      </Pressable>
 
       <Text className="mt-9 text-lg font-bold text-slate-900">
         Hızlı Erişim
