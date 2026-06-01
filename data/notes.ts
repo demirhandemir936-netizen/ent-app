@@ -111,6 +111,79 @@ export const notes: Note[] = [
       },
     ],
   },
+  {
+    slug: "cholesteatoma",
+    category: "Otoloji",
+    title: "Kolesteatom",
+    subtitle: "Klinik bulgular, görüntüleme ve cerrahi yaklaşım",
+
+    clinicalSummary:
+      "Kolesteatom, keratinize skuamöz epitelin orta kulak ve/veya mastoid bölgede birikerek lokal destrüksiyon oluşturabildiği kronik kulak hastalığıdır. Kemik erozyonu ve komplikasyon riski nedeniyle cerrahi değerlendirme önem taşır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "Tanım",
+        content:
+          "Kolesteatom, orta kulak veya mastoid içinde keratin debris birikimiyle seyreden ve çevre yapılarda erozyona yol açabilen patolojik bir süreçtir. Edinilmiş tipte retraksiyon cebi ve kronik östaki disfonksiyonu önemli mekanizmalar arasındadır.",
+      },
+      {
+        type: "bulletList",
+        title: "Klinik Şüphe Uyandıran Bulgular",
+        items: [
+          "Kötü kokulu veya tekrarlayan kulak akıntısı",
+          "Retraksiyon cebi içerisinde keratin debris görülmesi",
+          "İletim tipi veya mikst işitme kaybı",
+          "Granülasyon dokusu ya da polipoid görünüm",
+          "Vertigo, fasiyal paralizi veya intrakraniyal komplikasyon bulguları",
+        ],
+      },
+      {
+        type: "important",
+        title: "Önemli Klinik Nokta",
+        content:
+          "Kolesteatom şüphesinde normal görünen sınırlı bir otoskopik alan hastalığı dışlamaz. Attik bölge, posterior superior kadran ve mastoid yayılım olasılığı dikkatle değerlendirilmelidir.",
+      },
+      {
+        type: "table",
+        title: "Değerlendirme Özeti",
+        rows: [
+          {
+            label: "Otoskopi",
+            value:
+              "Retraksiyon cebi, keratin birikimi, granülasyon ve akıntı değerlendirilir.",
+          },
+          {
+            label: "Odyometri",
+            value:
+              "Hastalığa eşlik eden işitme kaybının tipi ve derecesi belirlenir.",
+          },
+          {
+            label: "BT",
+            value:
+              "Kemik erozyonu ve anatomik yayılımın değerlendirilmesinde yararlıdır.",
+          },
+          {
+            label: "Difüzyon MRG",
+            value:
+              "Seçilmiş olgularda rezidüel veya rekürren hastalık değerlendirmesinde kullanılabilir.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        title: "Tedavi Yaklaşımı",
+        content:
+          "Kolesteatom tedavisinin temel amacı hastalığın temizlenmesi, komplikasyon riskinin azaltılması ve mümkün olduğunda işitmenin korunması veya iyileştirilmesidir. Cerrahi yaklaşım hastalığın yaygınlığına, anatomiye ve hastanın izlem koşullarına göre planlanır.",
+      },
+      {
+        type: "examTip",
+        title: "Sınav Notu",
+        content:
+          "Kolesteatom, kemik erozyonu ve ciddi komplikasyon riski taşıması nedeniyle kronik kulak hastalıkları içinde cerrahi yaklaşım gerektiren temel patolojilerden biridir.",
+      },
+    ],
+  },
 ];
 
 export function getNoteBySlug(slug: string): Note | undefined {
