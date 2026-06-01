@@ -18,7 +18,7 @@ export default function HomeScreen() {
       </Text>
 
       <Pressable
-        onPress={() => router.push("/chronic-otitis-media")}
+        onPress={() => router.push("/notes/chronic-otitis-media")}
         className="mt-8 rounded-3xl bg-teal-700 p-6"
       >
         <View className="flex-row items-center justify-between">

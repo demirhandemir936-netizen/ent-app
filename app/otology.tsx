@@ -5,14 +5,14 @@ import { Pressable, ScrollView, Text, View } from "react-native";
 type OtologyTopic = {
   title: string;
   description: string;
-  route?: "/chronic-otitis-media";
+  route?: "/notes/chronic-otitis-media";
 };
 
 const otologyTopics: OtologyTopic[] = [
   {
     title: "Kronik Otitis Media",
     description: "Tanı, sınıflama ve cerrahi yaklaşım",
-    route: "/chronic-otitis-media",
+    route: "/notes/chronic-otitis-media",
   },
   {
     title: "Kolesteatom",

@@ -1,12 +1,36 @@
 import { Ionicons } from "@expo/vector-icons";
-import { router } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import { Pressable, ScrollView, Text, View } from "react-native";
 
-import NoteContentBlock from "../components/NoteContentBlock";
-import { chronicOtitisMediaNote } from "../data/notes";
+import NoteContentBlock from "../../components/NoteContentBlock";
+import { getNoteBySlug } from "../../data/notes";
 
-export default function ChronicOtitisMediaScreen() {
-  const note = chronicOtitisMediaNote;
+export default function NoteReaderScreen() {
+  const { slug } = useLocalSearchParams<{ slug: string }>();
+  const note = getNoteBySlug(slug);
+
+  if (!note) {
+    return (
+      <View className="flex-1 items-center justify-center bg-slate-50 px-6">
+        <Text className="text-xl font-bold text-slate-900">
+          Not bulunamadı
+        </Text>
+
+        <Text className="mt-3 text-center text-base leading-6 text-slate-500">
+          Açmaya çalıştığın ders notu henüz uygulamaya eklenmemiş olabilir.
+        </Text>
+
+        <Pressable
+          onPress={() => router.back()}
+          className="mt-8 rounded-2xl bg-teal-700 px-6 py-4"
+        >
+          <Text className="font-semibold text-white">
+            Geri Dön
+          </Text>
+        </Pressable>
+      </View>
+    );
+  }
 
   return (
     <ScrollView
