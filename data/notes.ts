@@ -184,6 +184,78 @@ export const notes: Note[] = [
       },
     ],
   },
+  {
+    slug: "sudden-hearing-loss",
+    category: "Otoloji",
+    title: "Ani İşitme Kaybı",
+    subtitle: "Acil değerlendirme, tanısal yaklaşım ve tedavi seçenekleri",
+
+    clinicalSummary:
+      "Ani sensörinöral işitme kaybı, hızlı değerlendirme gerektiren otolojik bir klinik tablodur. İlk yaklaşımda iletim tipi kayıp dışlanmalı, işitme kaybı odyometri ile doğrulanmalı ve uygun hastada erken tedavi seçenekleri değerlendirilmelidir.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "Klinik Yaklaşım",
+        content:
+          "Ani işitme kaybı ile başvuran hastada ilk amaç, iletim tipi işitme kaybı ile sensörinöral işitme kaybını ayırt etmektir. Öykü ve fizik muayenede bilateral kayıp, rekürren ataklar ve fokal nörolojik bulgular özellikle sorgulanmalıdır.",
+      },
+      {
+        type: "bulletList",
+        title: "İlk Değerlendirmede Temel Noktalar",
+        items: [
+          "Otoskopik muayene ile dış ve orta kulak patolojisinin değerlendirilmesi",
+          "Sensörinöral kaybı doğrulamak için mümkün olan en kısa sürede odyometri planlanması",
+          "Bilateral kayıp, tekrarlayan atak veya fokal nörolojik bulguların sorgulanması",
+          "Retrokochlear patoloji açısından MRG veya uygun hastada ABR değerlendirmesi",
+          "Tedavi zamanlamasının semptom başlangıcına göre planlanması",
+        ],
+      },
+      {
+        type: "important",
+        title: "Zaman Kritik",
+        content:
+          "Ani sensörinöral işitme kaybında odyometrik doğrulama geciktirilmemelidir. Başlangıç tedavisi için kortikosteroid seçeneği ilk 2 hafta içinde değerlendirilebilir; yetersiz iyileşmede intratimpanik steroid salvage tedavisi başlangıçtan sonraki 2–6 hafta içinde gündeme gelir.",
+      },
+      {
+        type: "table",
+        title: "Kılavuz Temelli Kısa Özet",
+        rows: [
+          {
+            label: "Odyometri",
+            value:
+              "Tanısal doğrulama için mümkün olan en kısa sürede, semptom başlangıcından itibaren 14 gün içinde planlanır.",
+          },
+          {
+            label: "MRG / ABR",
+            value:
+              "Retrokochlear patolojinin değerlendirilmesi amacıyla kullanılır.",
+          },
+          {
+            label: "Başlangıç steroid",
+            value:
+              "Uygun hastada semptom başlangıcından itibaren ilk 2 hafta içinde seçenek olarak değerlendirilebilir.",
+          },
+          {
+            label: "Salvage IT steroid",
+            value:
+              "Eksik iyileşme bulunan hastada başlangıçtan sonraki 2–6 hafta içinde önerilir.",
+          },
+          {
+            label: "Takip",
+            value:
+              "Tedavi sonunda ve tedavinin tamamlanmasından sonraki 6 ay içinde odyometrik değerlendirme yapılır.",
+          },
+        ],
+      },
+      {
+        type: "examTip",
+        title: "Sınav Notu",
+        content:
+          "Ani sensörinöral işitme kaybında rutin kafa BT incelemesi ve rutin laboratuvar testleri önerilmez. Antiviral, trombolitik, vazodilatör veya vazoaktif ilaçlar da rutin olarak başlanmamalıdır.",
+      },
+    ],
+  },
 ];
 
 export function getNoteBySlug(slug: string): Note | undefined {
