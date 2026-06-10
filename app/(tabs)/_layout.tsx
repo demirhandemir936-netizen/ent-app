@@ -4,6 +4,7 @@ import { Tabs } from "expo-router";
 export default function TabsLayout() {
   return (
     <Tabs
+      initialRouteName="home"
       screenOptions={{
         headerShown: false,
 
@@ -38,7 +39,7 @@ export default function TabsLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
           title: "Ana Sayfa",
           tabBarIcon: ({ color, size, focused }) => (

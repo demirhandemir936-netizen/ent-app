@@ -8,7 +8,13 @@ export default function RootLayout() {
     <>
       <StatusBar style="dark" />
 
-      <Stack screenOptions={{ headerShown: false }}>
+      <Stack
+        initialRouteName="index"
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
+        <Stack.Screen name="index" />
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="otology" />
         <Stack.Screen name="notes/[slug]" />
