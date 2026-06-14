@@ -256,6 +256,102 @@ export const notes: Note[] = [
       },
     ],
   },
+  {
+    slug: "acute-rhinosinusitis",
+    category: "Rinoloji",
+    title: "Akut Rinosinüzit",
+    subtitle: "Placeholder içerik",
+
+    clinicalSummary:
+      "Bu konu için kanıta dayalı içerik sonraki fazda EPOS, ICAR ve ilgili guideline kaynakları temel alınarak doldurulacaktır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "İçerik Hazırlanıyor",
+        content:
+          "Bu konu için kanıta dayalı içerik sonraki fazda EPOS, ICAR ve ilgili guideline kaynakları temel alınarak doldurulacaktır.",
+      },
+      {
+        type: "important",
+        title: "Placeholder",
+        content:
+          "Bu not klinik karar desteği amacıyla kullanılmamalıdır; ayrıntılı içerik kaynak kontrolü sonrası eklenecektir.",
+      },
+    ],
+  },
+  {
+    slug: "acute-bacterial-rhinosinusitis",
+    category: "Rinoloji",
+    title: "Akut Bakteriyel Rinosinüzit",
+    subtitle: "Placeholder içerik",
+
+    clinicalSummary:
+      "Bu konu için kanıta dayalı içerik sonraki fazda EPOS, ICAR ve ilgili guideline kaynakları temel alınarak doldurulacaktır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "İçerik Hazırlanıyor",
+        content:
+          "Bu konu için kanıta dayalı içerik sonraki fazda EPOS, ICAR ve ilgili guideline kaynakları temel alınarak doldurulacaktır.",
+      },
+      {
+        type: "important",
+        title: "Placeholder",
+        content:
+          "Bu not klinik karar desteği amacıyla kullanılmamalıdır; ayrıntılı içerik kaynak kontrolü sonrası eklenecektir.",
+      },
+    ],
+  },
+  {
+    slug: "chronic-rhinosinusitis",
+    category: "Rinoloji",
+    title: "Kronik Rinosinüzit",
+    subtitle: "Placeholder içerik",
+
+    clinicalSummary:
+      "Bu konu için kanıta dayalı içerik sonraki fazda EPOS, ICAR ve ilgili guideline kaynakları temel alınarak doldurulacaktır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "İçerik Hazırlanıyor",
+        content:
+          "Bu konu için kanıta dayalı içerik sonraki fazda EPOS, ICAR ve ilgili guideline kaynakları temel alınarak doldurulacaktır.",
+      },
+      {
+        type: "important",
+        title: "Placeholder",
+        content:
+          "Bu not klinik karar desteği amacıyla kullanılmamalıdır; ayrıntılı içerik kaynak kontrolü sonrası eklenecektir.",
+      },
+    ],
+  },
+  {
+    slug: "allergic-rhinitis",
+    category: "Rinoloji",
+    title: "Alerjik Rinit",
+    subtitle: "Placeholder içerik",
+
+    clinicalSummary:
+      "Bu konu için kanıta dayalı içerik sonraki fazda EPOS, ICAR ve ilgili guideline kaynakları temel alınarak doldurulacaktır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "İçerik Hazırlanıyor",
+        content:
+          "Bu konu için kanıta dayalı içerik sonraki fazda EPOS, ICAR ve ilgili guideline kaynakları temel alınarak doldurulacaktır.",
+      },
+      {
+        type: "important",
+        title: "Placeholder",
+        content:
+          "Bu not klinik karar desteği amacıyla kullanılmamalıdır; ayrıntılı içerik kaynak kontrolü sonrası eklenecektir.",
+      },
+    ],
+  },
 ];
 
 export function getNoteBySlug(slug: string): Note | undefined {

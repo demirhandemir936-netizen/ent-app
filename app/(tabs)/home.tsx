@@ -1,5 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
-import { router } from "expo-router";
+import { router, type Href } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 
 export default function HomeScreen() {
@@ -60,13 +60,16 @@ export default function HomeScreen() {
           </Text>
         </Pressable>
 
-        <View className="flex-1 rounded-2xl border border-slate-200 bg-white p-4">
+        <Pressable
+          onPress={() => router.push("/rhinology" as Href)}
+          className="flex-1 rounded-2xl border border-slate-200 bg-white p-4"
+        >
           <Ionicons name="medical-outline" size={23} color="#0F766E" />
 
           <Text className="mt-4 font-semibold text-slate-900">
             Rinoloji
           </Text>
-        </View>
+        </Pressable>
       </View>
     </View>
   );

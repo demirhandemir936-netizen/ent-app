@@ -1,5 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
-import { router } from "expo-router";
+import { router, type Href } from "expo-router";
 import { useMemo, useState } from "react";
 import {
   Pressable,
@@ -15,7 +15,7 @@ type Topic = {
   title: string;
   description: string;
   icon: keyof typeof Ionicons.glyphMap;
-  route?: "/otology";
+  route?: "/otology" | "/rhinology";
 };
 
 const topics: Topic[] = [
@@ -29,6 +29,7 @@ const topics: Topic[] = [
     title: "Rinoloji",
     description: "Burun ve paranazal sinüs hastalıkları",
     icon: "medical-outline",
+    route: "/rhinology",
   },
   {
     title: "Baş Boyun Cerrahisi",
@@ -186,7 +187,7 @@ export default function TopicsScreen() {
               disabled={!topic.route}
               onPress={() => {
                 if (topic.route) {
-                  router.push(topic.route);
+                  router.push(topic.route as Href);
                 }
               }}
               className="flex-row items-center rounded-2xl border border-slate-200 bg-white p-4"

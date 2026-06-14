@@ -17,6 +17,7 @@ export default function RootLayout() {
         <Stack.Screen name="index" />
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="otology" />
+        <Stack.Screen name="rhinology" />
         <Stack.Screen name="notes/[slug]" />
       </Stack>
     </>
