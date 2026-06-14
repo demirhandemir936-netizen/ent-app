@@ -1,6 +1,7 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import { useRef, useState, type ComponentRef } from "react";
+import { useEffect, useRef, useState, type ComponentRef } from "react";
 import {
     Text,
     TouchableOpacity,
@@ -21,6 +22,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const AnimatedTouchableOpacity =
   Animated.createAnimatedComponent(TouchableOpacity);
+
+const ONBOARDING_COMPLETED_KEY = "ent-app-onboarding-completed";
 
 type OnboardingPage = {
   id: string;
@@ -284,8 +287,36 @@ export default function OnboardingScreen() {
   const scrollViewRef =
     useRef<ComponentRef<typeof Animated.ScrollView>>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [hasCheckedOnboarding, setHasCheckedOnboarding] = useState(false);
 
   const lastIndex = PAGES.length - 1;
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const checkOnboardingCompletion = async () => {
+      try {
+        const value = await AsyncStorage.getItem(ONBOARDING_COMPLETED_KEY);
+
+        if (value === "true") {
+          router.replace("/home");
+          return;
+        }
+      } catch (error) {
+        console.warn("Onboarding durumu okunamadi:", error);
+      }
+
+      if (isMounted) {
+        setHasCheckedOnboarding(true);
+      }
+    };
+
+    checkOnboardingCompletion();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const scrollHandler = useAnimatedScrollHandler({
     onScroll: (event) => {
@@ -304,10 +335,16 @@ export default function OnboardingScreen() {
     goToPage(lastIndex);
   };
 
-  const handlePrimaryButton = () => {
+  const handlePrimaryButton = async () => {
     if (activeIndex < lastIndex) {
       goToPage(activeIndex + 1);
       return;
+    }
+
+    try {
+      await AsyncStorage.setItem(ONBOARDING_COMPLETED_KEY, "true");
+    } catch (error) {
+      console.warn("Onboarding durumu kaydedilemedi:", error);
     }
 
     router.replace("/home");
@@ -377,6 +414,10 @@ export default function OnboardingScreen() {
       ),
     };
   });
+
+  if (!hasCheckedOnboarding) {
+    return <SafeAreaView className="flex-1 bg-[#F8FAF9]" />;
+  }
 
   return (
     <SafeAreaView className="flex-1 bg-[#F8FAF9]">

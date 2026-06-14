@@ -1,7 +1,23 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Ionicons } from "@expo/vector-icons";
-import { Text, View } from "react-native";
+import { Alert, Pressable, Text, View } from "react-native";
+
+const ONBOARDING_COMPLETED_KEY = "ent-app-onboarding-completed";
 
 export default function SettingsScreen() {
+  const handleResetOnboarding = async () => {
+    try {
+      await AsyncStorage.removeItem(ONBOARDING_COMPLETED_KEY);
+      Alert.alert(
+        "Onboarding",
+        "Onboarding bir sonraki açılışta tekrar gösterilecek.",
+      );
+    } catch (error) {
+      console.warn("Onboarding durumu sıfırlanamadı:", error);
+      Alert.alert("Onboarding", "Onboarding ayarı sıfırlanamadı.");
+    }
+  };
+
   return (
     <View className="flex-1 bg-slate-50 px-5 pb-32 pt-16">
       <Text className="text-3xl font-bold text-slate-900">
@@ -25,7 +41,7 @@ export default function SettingsScreen() {
           <Ionicons name="chevron-forward" size={19} color="#94A3B8" />
         </View>
 
-        <View className="flex-row items-center p-4">
+        <View className="flex-row items-center border-b border-slate-100 p-4">
           <View className="rounded-xl bg-teal-50 p-2">
             <Ionicons name="text-outline" size={21} color="#0F766E" />
           </View>
@@ -36,6 +52,22 @@ export default function SettingsScreen() {
 
           <Ionicons name="chevron-forward" size={19} color="#94A3B8" />
         </View>
+
+        <Pressable
+          onPress={handleResetOnboarding}
+          accessibilityRole="button"
+          className="flex-row items-center p-4"
+        >
+          <View className="rounded-xl bg-teal-50 p-2">
+            <Ionicons name="refresh-outline" size={21} color="#0F766E" />
+          </View>
+
+          <Text className="ml-4 flex-1 text-base font-medium text-slate-800">
+            {"Onboarding'i Tekrar Göster"}
+          </Text>
+
+          <Ionicons name="chevron-forward" size={19} color="#94A3B8" />
+        </Pressable>
       </View>
     </View>
   );
