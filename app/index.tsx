@@ -1,8 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import { useRef, useState } from "react";
+import { useRef, useState, type ComponentRef } from "react";
 import {
-    ScrollView,
     Text,
     TouchableOpacity,
     useWindowDimensions,
@@ -282,7 +281,8 @@ function PageDot({ index, scrollX, width }: DotProps) {
 export default function OnboardingScreen() {
   const { width } = useWindowDimensions();
   const scrollX = useSharedValue(0);
-  const scrollViewRef = useRef<ScrollView>(null);
+  const scrollViewRef =
+    useRef<ComponentRef<typeof Animated.ScrollView>>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const lastIndex = PAGES.length - 1;
