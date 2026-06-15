@@ -1111,23 +1111,227 @@ export const notes: Note[] = [
     slug: "fungal-rhinosinusitis",
     category: "Rinoloji",
     title: "Fungal Rinosinüzit",
-    subtitle: "Fungal rinosinüzit için placeholder içerik",
+    subtitle: "Fungal ball, alerjik fungal rinosinüzit ve invaziv formlara poliklinik yaklaşımı",
 
     clinicalSummary:
-      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      "Fungal rinosinüzit; noninvaziv ve invaziv formları olan heterojen bir hastalık grubudur. Poliklinikte en önemli ayrım fungal ball veya alerjik fungal rinosinüzit gibi daha kronik/noninvaziv tablolar ile immünsüprese hastada görülebilen invaziv fungal rinosinüzit arasında yapılmalıdır. İnvaziv form şüphesi acil değerlendirme gerektirir.",
 
     blocks: [
       {
         type: "paragraph",
-        title: "İçerik Hazırlanıyor",
+        title: "Poliklinik Yaklaşımı",
         content:
-          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+          "Fungal rinosinüzit tek bir hastalık değildir. Fungal ball genellikle tek sinüste lokalize fungal materyal ile seyrederken, alerjik fungal rinosinüzit tip 2 inflamasyon, nazal polip ve alerjik müsin ile ilişkili kronik bir tablodur. Akut invaziv fungal rinosinüzit ise özellikle immünsüpresyon, kontrolsüz diyabet, hematolojik malignite, transplantasyon veya yoğun kortikosteroid kullanımı gibi risklerde hızla ilerleyebilen acil bir tablodur.",
+      },
+      {
+        type: "bulletList",
+        title: "Poliklinikte İlk 60 Saniye",
+        items: [
+          "Hasta immünsüprese mi?",
+          "Kontrolsüz diyabet veya ketoasidoz öyküsü var mı?",
+          "Hematolojik malignite, transplantasyon, kemoterapi veya uzun süreli steroid kullanımı var mı?",
+          "Semptomlar kronik mi, yoksa hızlı kötüleşen akut tablo mu?",
+          "Tek taraflı kötü kokulu akıntı, yüz ağrısı veya dental kaynak şüphesi var mı?",
+          "Göz çevresinde şişlik, proptozis, diplopi veya görme azalması var mı?",
+          "Burun içinde siyah nekrotik krut, kabuklanma veya hipoestezi var mı?",
+          "Daha önce polip, CRS veya sinüs cerrahisi öyküsü var mı?",
+        ],
+      },
+      {
+        type: "table",
+        title: "Fungal Rinosinüzit Klinik Formları",
+        rows: [
+          {
+            label: "Fungal ball",
+            value: "Genellikle noninvazivdir; çoğunlukla tek sinüste fungal materyal birikimi şeklindedir",
+          },
+          {
+            label: "Alerjik fungal rinosinüzit",
+            value: "Nazal polip, alerjik müsin, genç/atopik hasta ve geniş sinüs opasiteleriyle ilişkilidir",
+          },
+          {
+            label: "Kronik invaziv fungal rinosinüzit",
+            value: "Daha yavaş seyirli invazyon olabilir; doku invazyonu tanı için kritiktir",
+          },
+          {
+            label: "Akut invaziv fungal rinosinüzit",
+            value: "İmmünsüprese veya kontrolsüz diyabetik hastada acil ve hayatı tehdit eden tablodur",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Fungal Ball İçin İpuçları",
+        items: [
+          "Sıklıkla tek taraflı maksiller sinüs tutulumu görülebilir",
+          "Kronik tek taraflı basınç, dolgunluk veya kötü kokulu akıntı olabilir",
+          "BT’de hiperdens odaklar veya kalsifikasyon benzeri görünüm olabilir",
+          "Doku invazyonu beklenmez",
+          "Tedavide temel yaklaşım endoskopik cerrahi ile fungal materyalin temizlenmesidir",
+          "Sistemik antifungal çoğu izole fungal ball olgusunda rutin değildir",
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Alerjik Fungal Rinosinüzit İçin İpuçları",
+        items: [
+          "Genç veya atopik hastada görülebilir",
+          "Nazal polip ve kronik rinosinüzit bulguları eşlik edebilir",
+          "Koyu, yoğun, yapışkan alerjik müsin görülebilir",
+          "Koku kaybı ve nazal obstrüksiyon belirgin olabilir",
+          "BT’de heterojen opasiteler ve sinüs ekspansiyonu görülebilir",
+          "Cerrahi temizlik sonrası topikal antiinflamatuvar tedavi ve yakın takip önemlidir",
+          "Nüks eğilimi nedeniyle uzun dönem takip gerekir",
+        ],
       },
       {
         type: "important",
-        title: "Placeholder Not",
+        title: "İnvaziv Fungal Rinosinüzit Alarmı",
         content:
-          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+          "İmmünsüprese veya kontrolsüz diyabetik hastada hızlı ilerleyen nazal/fasiyal ağrı, ateş, siyah nekrotik krut, damak lezyonu, yüz uyuşması, orbital bulgu, görme kaybı veya nörolojik bulgu varsa akut invaziv fungal rinosinüzit düşünülmelidir. Bu durum rutin poliklinik izlemiyle yönetilmez; acil endoskopi, görüntüleme, biyopsi/debridman ve multidisipliner tedavi gerekir.",
+      },
+      {
+        type: "table",
+        title: "İnvaziv Hastalık Şüphesinde Kırmızı Bayraklar",
+        rows: [
+          {
+            label: "Siyah nekrotik krut",
+            value: "Mukozal invazyon ve nekroz açısından uyarıcıdır",
+          },
+          {
+            label: "Yüzde uyuşma veya hipoestezi",
+            value: "Perinöral veya doku invazyonu şüphesi doğurur",
+          },
+          {
+            label: "Orbital ağrı, proptozis veya diplopi",
+            value: "Orbital yayılım açısından acildir",
+          },
+          {
+            label: "Görme azalması",
+            value: "Orbital apex veya optik sinir tutulumu açısından acildir",
+          },
+          {
+            label: "Damakta nekroz veya ülser",
+            value: "Yaygın invazyon bulgusu olabilir",
+          },
+          {
+            label: "Bilinç değişikliği veya fokal nörolojik bulgu",
+            value: "İntrakraniyal yayılım açısından acildir",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Muayene ve Endoskopide Bakılacaklar",
+        items: [
+          "Orta meatus, septum, alt konka ve nazal tabanda nekrotik alan var mı?",
+          "Siyah kabuklanma veya soluk-iskemik mukoza var mı?",
+          "Pürülan sekresyon veya yoğun koyu müsin var mı?",
+          "Polip ve yaygın ödem var mı?",
+          "Tek taraflı kitle veya kanama var mı?",
+          "Damak, diş eti ve oral kavite nekroz açısından değerlendirilmeli",
+          "Orbital muayene ve kraniyal sinir bulguları sorgulanmalı",
+        ],
+      },
+      {
+        type: "important",
+        title: "Görüntüleme Kararı",
+        content:
+          "Fungal ball veya AFRS şüphesinde BT hastalık yaygınlığı ve cerrahi planlama için değerlidir. İnvaziv fungal rinosinüzit şüphesinde ise BT ve/veya MRG acil değerlendirme parçasıdır; ancak görüntüleme normal veya sınırlı görünse bile güçlü klinik şüphede endoskopik biyopsi/debridman geciktirilmemelidir.",
+      },
+      {
+        type: "table",
+        title: "Görüntüleme ve Tanı Mantığı",
+        rows: [
+          {
+            label: "Fungal ball şüphesi",
+            value: "BT ile lokalizasyon ve cerrahi planlama yapılır",
+          },
+          {
+            label: "AFRS şüphesi",
+            value: "BT’de yaygın opasite, heterojen içerik ve ekspansiyon değerlendirilebilir",
+          },
+          {
+            label: "Orbital/intrakraniyal şüphe",
+            value: "BT ve MRG birlikte değerlendirilebilir",
+          },
+          {
+            label: "İnvaziv hastalık şüphesi",
+            value: "Endoskopi, biyopsi ve histopatolojik doku invazyonu kritik önemdedir",
+          },
+          {
+            label: "Tek taraflı kitle",
+            value: "Neoplazi ve odontojenik hastalık ayırıcı tanısı yapılmalıdır",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Tedavi Prensipleri",
+        items: [
+          "Fungal ball’da temel yaklaşım endoskopik cerrahi temizleme ve drenajdır",
+          "AFRS’de cerrahi temizlik, polip/müsin kontrolü ve postoperatif antiinflamatuvar takip önemlidir",
+          "İnvaziv fungal rinosinüzitte acil cerrahi debridman gerekir",
+          "İnvaziv Aspergillus sinüzitinde sistemik antifungal tedavi cerrahiyle birlikte değerlendirilir",
+          "Mukormikoz şüphesinde erken tanı, acil cerrahi ve sistemik antifungal tedavi hayati önemdedir",
+          "Altta yatan immünsüpresyon, nötropeni veya hiperglisemi mümkünse düzeltilmelidir",
+          "Enfeksiyon hastalıkları, göz hastalıkları, nöroşirürji ve yoğun bakım iş birliği gerekebilir",
+        ],
+      },
+      {
+        type: "table",
+        title: "Poliklinik Karar Özeti",
+        rows: [
+          {
+            label: "Tek taraflı kronik maksiller sinüs opasitesi ve fungal ball şüphesi",
+            value: "Cerrahi değerlendirme ve BT ile planlama",
+          },
+          {
+            label: "Polipli, atopik, koyu müsinli kronik tablo",
+            value: "AFRS düşün; endoskopi, BT ve cerrahi/medikal planlama",
+          },
+          {
+            label: "İmmünsüprese hastada nekrotik krut",
+            value: "Akut invaziv fungal rinosinüzit dışlanana kadar acil kabul et",
+          },
+          {
+            label: "Orbital veya nörolojik bulgu",
+            value: "Acil görüntüleme ve multidisipliner değerlendirme",
+          },
+          {
+            label: "Tek taraflı kanama/kitle",
+            value: "Neoplazi ayırıcı tanısını dışla",
+          },
+        ],
+      },
+      {
+        type: "important",
+        title: "Poliklinik Güvenlik Notu",
+        content:
+          "Fungal rinosinüzitte en tehlikeli hata, invaziv formu kronik sinüzit veya basit kabuklanma gibi değerlendirmektir. Riskli hastada nekrotik krut veya orbital/nörolojik bulgu varsa aynı gün ileri değerlendirme gerekir.",
+      },
+      {
+        type: "bulletList",
+        title: "Hasta Bilgilendirme",
+        items: [
+          "Fungal ball genellikle cerrahi temizlikle yönetilen lokal bir durumdur",
+          "AFRS nüks edebilen kronik inflamatuvar bir hastalık olabilir",
+          "Cerrahi sonrası takip ve nazal tedavi uyumu nüksü azaltmada önemlidir",
+          "Diyabet veya bağışıklık baskılanması varsa burun içinde siyah kabuklanma, göz bulgusu veya şiddetli yüz ağrısı acil başvuru nedenidir",
+          "Tek taraflı kanama veya ilerleyici tıkanıklık ihmal edilmemelidir",
+        ],
+      },
+      {
+        type: "examTip",
+        title: "Sınav ve Poliklinik İpucu",
+        content:
+          "Fungal rinosinüzitte sınavın ve polikliniğin ana ayrımı invaziv ve noninvaziv hastalıktır. Fungal ball’da çoğu zaman cerrahi temizlik yeterliyken, invaziv fungal rinosinüzit acil cerrahi debridman ve sistemik antifungal tedavi gerektiren hayatı tehdit eden tablodur.",
+      },
+      {
+        type: "paragraph",
+        title: "Kaynak Dayanağı",
+        content:
+          "Kaynak dayanağı: EPOS 2020, ICAR-RS-2021, IDSA Aspergillus kılavuzu ve mukormikoz global guideline önerileri temel alınarak hazırlanmıştır. Bu not eğitim amaçlıdır; hasta özelinde karar endoskopi, görüntüleme, histopatoloji, kültür ve multidisipliner değerlendirmeyle verilmelidir.",
       },
     ],
   },
