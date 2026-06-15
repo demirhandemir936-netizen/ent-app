@@ -808,6 +808,150 @@ export const notes: Note[] = [
       },
     ],
   },
+  {
+    slug: "chronic-rhinosinusitis-with-nasal-polyps",
+    category: "Rinoloji",
+    title: "Nazal Polipli Kronik Rinosinüzit",
+    subtitle: "Nazal polipli kronik rinosinüzit için placeholder içerik",
+
+    clinicalSummary:
+      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "İçerik Hazırlanıyor",
+        content:
+          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      },
+      {
+        type: "important",
+        title: "Placeholder Not",
+        content:
+          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+      },
+    ],
+  },
+  {
+    slug: "nonallergic-rhinitis",
+    category: "Rinoloji",
+    title: "Nonalerjik Rinit",
+    subtitle: "Nonalerjik rinit için placeholder içerik",
+
+    clinicalSummary:
+      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "İçerik Hazırlanıyor",
+        content:
+          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      },
+      {
+        type: "important",
+        title: "Placeholder Not",
+        content:
+          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+      },
+    ],
+  },
+  {
+    slug: "fungal-rhinosinusitis",
+    category: "Rinoloji",
+    title: "Fungal Rinosinüzit",
+    subtitle: "Fungal rinosinüzit için placeholder içerik",
+
+    clinicalSummary:
+      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "İçerik Hazırlanıyor",
+        content:
+          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      },
+      {
+        type: "important",
+        title: "Placeholder Not",
+        content:
+          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+      },
+    ],
+  },
+  {
+    slug: "epistaxis",
+    category: "Rinoloji",
+    title: "Epistaksis",
+    subtitle: "Epistaksis için placeholder içerik",
+
+    clinicalSummary:
+      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "İçerik Hazırlanıyor",
+        content:
+          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      },
+      {
+        type: "important",
+        title: "Placeholder Not",
+        content:
+          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+      },
+    ],
+  },
+  {
+    slug: "septal-deviation",
+    category: "Rinoloji",
+    title: "Septum Deviasyonu",
+    subtitle: "Septum deviasyonu için placeholder içerik",
+
+    clinicalSummary:
+      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "İçerik Hazırlanıyor",
+        content:
+          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      },
+      {
+        type: "important",
+        title: "Placeholder Not",
+        content:
+          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+      },
+    ],
+  },
+  {
+    slug: "fess-indications-complications",
+    category: "Rinoloji",
+    title: "FESS Endikasyonları ve Komplikasyonları",
+    subtitle: "FESS endikasyonları ve komplikasyonları için placeholder içerik",
+
+    clinicalSummary:
+      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+
+    blocks: [
+      {
+        type: "paragraph",
+        title: "İçerik Hazırlanıyor",
+        content:
+          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      },
+      {
+        type: "important",
+        title: "Placeholder Not",
+        content:
+          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+      },
+    ],
+  },
 ];
 
 export function getNoteBySlug(slug: string): Note | undefined {

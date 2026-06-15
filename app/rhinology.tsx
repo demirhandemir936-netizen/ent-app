@@ -9,7 +9,13 @@ type RhinologyTopic = {
     | "/notes/acute-rhinosinusitis"
     | "/notes/acute-bacterial-rhinosinusitis"
     | "/notes/chronic-rhinosinusitis"
-    | "/notes/allergic-rhinitis";
+    | "/notes/chronic-rhinosinusitis-with-nasal-polyps"
+    | "/notes/allergic-rhinitis"
+    | "/notes/nonallergic-rhinitis"
+    | "/notes/fungal-rhinosinusitis"
+    | "/notes/epistaxis"
+    | "/notes/septal-deviation"
+    | "/notes/fess-indications-complications";
 };
 
 const rhinologyTopics: RhinologyTopic[] = [
@@ -31,6 +37,7 @@ const rhinologyTopics: RhinologyTopic[] = [
   {
     title: "Nazal Polipli Kronik Rinosinüzit",
     description: "Koku kaybı, polip yükü ve inflamatuvar hastalık yönetimi",
+    route: "/notes/chronic-rhinosinusitis-with-nasal-polyps",
   },
   {
     title: "Alerjik Rinit",
@@ -40,22 +47,27 @@ const rhinologyTopics: RhinologyTopic[] = [
   {
     title: "Nonalerjik Rinit",
     description: "İrritan, vazomotor ve alerji dışı rinit tabloları",
+    route: "/notes/nonallergic-rhinitis",
   },
   {
     title: "Fungal Rinosinüzit",
     description: "Alerjik, fungal ball ve invaziv formlara genel yaklaşım",
+    route: "/notes/fungal-rhinosinusitis",
   },
   {
     title: "Epistaksis",
     description: "Anterior-posterior kanama ayrımı ve poliklinik yönetimi",
+    route: "/notes/epistaxis",
   },
   {
     title: "Septum Deviasyonu",
     description: "Nazal obstrüksiyon değerlendirmesi ve cerrahi karar",
+    route: "/notes/septal-deviation",
   },
   {
     title: "FESS Endikasyonları ve Komplikasyonları",
     description: "Endoskopik sinüs cerrahisi için endikasyon ve riskler",
+    route: "/notes/fess-indications-complications",
   },
 ];
 
