@@ -15,47 +15,47 @@ type RhinologyTopic = {
 const rhinologyTopics: RhinologyTopic[] = [
   {
     title: "Akut Rinosinüzit",
-    description: "Placeholder içerik",
+    description: "Viral, post-viral ve bakteriyel ayrımına pratik yaklaşım",
     route: "/notes/acute-rhinosinusitis",
   },
   {
     title: "Akut Bakteriyel Rinosinüzit",
-    description: "Placeholder içerik",
+    description: "Antibiyotik kararını yönlendiren klinik paternler",
     route: "/notes/acute-bacterial-rhinosinusitis",
   },
   {
     title: "Kronik Rinosinüzit",
-    description: "Placeholder içerik",
+    description: "12 haftadan uzun semptom ve objektif inflamasyon yaklaşımı",
     route: "/notes/chronic-rhinosinusitis",
   },
   {
     title: "Nazal Polipli Kronik Rinosinüzit",
-    description: "İçerik sonraki fazda eklenecek",
+    description: "Koku kaybı, polip yükü ve inflamatuvar hastalık yönetimi",
   },
   {
     title: "Alerjik Rinit",
-    description: "Placeholder içerik",
+    description: "Tetikleyici, fenotip ve basamaklı tedavi yaklaşımı",
     route: "/notes/allergic-rhinitis",
   },
   {
     title: "Nonalerjik Rinit",
-    description: "İçerik sonraki fazda eklenecek",
+    description: "İrritan, vazomotor ve alerji dışı rinit tabloları",
   },
   {
     title: "Fungal Rinosinüzit",
-    description: "İçerik sonraki fazda eklenecek",
+    description: "Alerjik, fungal ball ve invaziv formlara genel yaklaşım",
   },
   {
     title: "Epistaksis",
-    description: "İçerik sonraki fazda eklenecek",
+    description: "Anterior-posterior kanama ayrımı ve poliklinik yönetimi",
   },
   {
     title: "Septum Deviasyonu",
-    description: "İçerik sonraki fazda eklenecek",
+    description: "Nazal obstrüksiyon değerlendirmesi ve cerrahi karar",
   },
   {
     title: "FESS Endikasyonları ve Komplikasyonları",
-    description: "İçerik sonraki fazda eklenecek",
+    description: "Endoskopik sinüs cerrahisi için endikasyon ve riskler",
   },
 ];
 
