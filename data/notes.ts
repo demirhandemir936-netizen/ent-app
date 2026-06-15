@@ -1339,23 +1339,254 @@ export const notes: Note[] = [
     slug: "epistaxis",
     category: "Rinoloji",
     title: "Epistaksis",
-    subtitle: "Epistaksis için placeholder içerik",
+    subtitle: "Anterior-posterior kanama ayrımı, ilk müdahale ve poliklinik yönetimi",
 
     clinicalSummary:
-      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      "Epistaksis; nazal kavite veya nazofarenksten kaynaklanan burun kanamasıdır. Poliklinikte ilk amaç hastanın hemodinamik durumunu değerlendirmek, aktif kanamayı kontrol etmek, anterior-posterior kaynak ayrımı yapmak, antikoagülan/antiagregan kullanımı ve sistemik riskleri sorgulamak, tekrarlayan veya unilateral kanamalarda altta yatan patolojiyi dışlamaktır.",
 
     blocks: [
       {
         type: "paragraph",
-        title: "İçerik Hazırlanıyor",
+        title: "Poliklinik Yaklaşımı",
         content:
-          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+          "Epistaksis çoğu zaman anterior septum kaynaklıdır ve basit kompresyon, lokal vazokonstriktör, kimyasal koter veya anterior tamponla kontrol edilebilir. Ancak posterior kanama, hemodinamik instabilite, antikoagülan kullanımı, koagülopati, travma, tümör şüphesi veya herediter hemorajik telenjiektazi gibi durumlar daha dikkatli yaklaşım gerektirir.",
+      },
+      {
+        type: "bulletList",
+        title: "Poliklinikte İlk 60 Saniye",
+        items: [
+          "Kanama şu anda aktif mi?",
+          "Hasta soluk, terli, hipotansif veya taşikardik mi?",
+          "Kanama tek taraflı mı, iki taraflı mı?",
+          "Kan boğaza akıyor mu, hasta kan yutuyor mu?",
+          "İlk kanama mı, tekrarlayan kanama mı?",
+          "Antikoagülan, antiagregan, NSAİİ veya bitkisel kanama artırıcı ürün kullanıyor mu?",
+          "Hipertansiyon, karaciğer hastalığı, böbrek yetmezliği veya kanama diyatezi var mı?",
+          "Travma, burun karıştırma, kuruluk, septal perforasyon veya intranazal ilaç kullanımı var mı?",
+          "Tek taraflı tıkanıklık, kötü kokulu akıntı, kitle hissi veya kilo kaybı var mı?",
+        ],
       },
       {
         type: "important",
-        title: "Placeholder Not",
+        title: "İlk Müdahale",
         content:
-          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+          "Aktif epistaksiste ilk basamak; hastayı öne eğmek, kanı yutmamasını sağlamak ve burun alt 1/3 yumuşak kısmına sürekli ve yeterli süre kompresyon uygulamaktır. Baş geriye atılmamalıdır; kanın yutulması bulantı, kusma ve aspirasyon riskini artırabilir.",
+      },
+      {
+        type: "bulletList",
+        title: "İlk Basamak Müdahale Sırası",
+        items: [
+          "Hastayı oturt ve öne eğ",
+          "Pıhtı varsa nazal pasajı nazikçe temizle",
+          "Alt 1/3 yumuşak burun kısmına sürekli bası uygulat",
+          "Uygunsa topikal vazokonstriktör veya lokal anestezik-vazokonstriktör uygulanabilir",
+          "Kanama odağı görünüyorsa hedefe yönelik koter düşün",
+          "Yaygın mukozal kanama veya odak görülemiyorsa anterior tampon değerlendir",
+          "Kanama posterior kaynaklı görünüyorsa veya kontrol edilemiyorsa ileri değerlendirme gerekir",
+        ],
+      },
+      {
+        type: "table",
+        title: "Anterior ve Posterior Epistaksis Ayrımı",
+        rows: [
+          {
+            label: "Anterior epistaksis",
+            value: "Genellikle tek taraflı, septum anteriorundan kaynaklı ve daha kolay kontrol edilebilir",
+          },
+          {
+            label: "Posterior epistaksis",
+            value: "Daha yaşlı hastada, yoğun kanama, boğaza akış ve bilateral görünüm olabilir",
+          },
+          {
+            label: "Kompresyona yanıt",
+            value: "Anterior kanamada daha iyi yanıt beklenir",
+          },
+          {
+            label: "Kanama odağının görülmesi",
+            value: "Anterior kaynakta daha sık mümkündür",
+          },
+          {
+            label: "Hemodinamik etkilenme",
+            value: "Posterior veya yoğun kanamada daha olasıdır",
+          },
+          {
+            label: "Yatış/ileri girişim gereksinimi",
+            value: "Posterior kanamada daha sık gerekebilir",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Muayenede Bakılacaklar",
+        items: [
+          "Anterior septumda belirgin kanama odağı",
+          "Septal kuruluk, kabuklanma veya fissür",
+          "Septal perforasyon",
+          "Travma bulgusu veya hematom",
+          "Telanjiektazi odakları",
+          "Tek taraflı kitle, polip veya ülserasyon",
+          "Pürülan akıntı veya yabancı cisim şüphesi",
+          "Posterior farenkste aktif kan akışı",
+        ],
+      },
+      {
+        type: "important",
+        title: "Koter Güvenlik Notu",
+        content:
+          "Kimyasal koter, kanama odağı net görülüyorsa hedefe yönelik uygulanmalıdır. Karşılıklı bilateral septal koterden kaçınılmalıdır; septal perforasyon riskini artırabilir. Yaygın, aktif ve kontrolsüz kanamada koter yerine önce kanamayı görmeyi sağlayacak basamaklar uygulanmalıdır.",
+      },
+      {
+        type: "table",
+        title: "Poliklinik Tedavi Seçenekleri",
+        rows: [
+          {
+            label: "Kompresyon",
+            value: "İlk basamak müdahaledir",
+          },
+          {
+            label: "Topikal vazokonstriktör",
+            value: "Uygun hastada kanamayı azaltmak ve görüş sağlamak için kullanılabilir",
+          },
+          {
+            label: "Kimyasal koter",
+            value: "Net görülen anterior kanama odağında düşünülür",
+          },
+          {
+            label: "Anterior tampon",
+            value: "Koter yapılamayan veya odak görülmeyen anterior kanamalarda düşünülür",
+          },
+          {
+            label: "Posterior tampon / ileri müdahale",
+            value: "Posterior kaynak, yoğun kanama veya anterior yöntemlerle kontrolsüz kanamada gerekir",
+          },
+          {
+            label: "Endoskopik arter ligasyonu / embolizasyon",
+            value: "Persistan, posterior veya tekrarlayan ciddi kanamalarda ileri merkez yaklaşımıdır",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Antikoagülan ve Antiagregan Kullanımı",
+        items: [
+          "İlacın adı, dozu ve son alınma zamanı sorgulanmalıdır",
+          "Antikoagülan/antiagregan kullanımı kanamanın şiddetini ve kontrolünü etkileyebilir",
+          "İlaç kesme veya geri çevirme kararı hastanın tromboembolik riskiyle birlikte değerlendirilmelidir",
+          "Gerekirse ilgili branşlarla iletişim kurulmalıdır",
+          "Sadece hafif epistaksis nedeniyle kritik kardiyovasküler ilaçlar kontrolsüz şekilde kesilmemelidir",
+        ],
+      },
+      {
+        type: "important",
+        title: "Laboratuvar Ne Zaman?",
+        content:
+          "Her basit anterior epistaksiste rutin laboratuvar gerekmez. Yoğun veya tekrarlayan kanama, antikoagülan kullanımı, bilinen koagülopati, karaciğer hastalığı, hematolojik hastalık, hemodinamik etkilenme veya cerrahi/girişim ihtimali varsa hemogram ve koagülasyon değerlendirmesi düşünülür.",
+      },
+      {
+        type: "bulletList",
+        title: "HHT ve Sistemik Nedenleri Sorgula",
+        items: [
+          "Tekrarlayan spontan epistaksis var mı?",
+          "Ailede tekrarlayan burun kanaması öyküsü var mı?",
+          "Dudak, oral kavite, dil, burun mukozası veya parmaklarda telanjiektazi var mı?",
+          "Demir eksikliği anemisi veya açıklanamayan halsizlik var mı?",
+          "Gastrointestinal kanama veya pulmoner/serebral AVM öyküsü var mı?",
+          "Çocuk veya genç hastada tekrarlayan ciddi kanama varsa sistemik nedenler düşünülmelidir",
+        ],
+      },
+      {
+        type: "table",
+        title: "Alarm Bulguları",
+        rows: [
+          {
+            label: "Hemodinamik instabilite",
+            value: "Acil müdahale ve resüsitasyon gerektirir",
+          },
+          {
+            label: "Posterior farenkse yoğun kan akışı",
+            value: "Posterior epistaksis düşündürür",
+          },
+          {
+            label: "Tek taraflı tekrarlayan kanama",
+            value: "Kitle, yabancı cisim veya lokal patoloji dışlanmalıdır",
+          },
+          {
+            label: "Kanama + tek taraflı tıkanıklık",
+            value: "Sinonazal tümör ayırıcı tanısı gerekir",
+          },
+          {
+            label: "Travma sonrası septal şişlik",
+            value: "Septal hematom dışlanmalıdır",
+          },
+          {
+            label: "Antikoagülan kullanımı ve durmayan kanama",
+            value: "Sistemik risk ve ilaç yönetimi değerlendirilmelidir",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Tampon Sonrası Hasta Eğitimi",
+        items: [
+          "Tamponun ne zaman ve nerede çıkarılacağı net söylenmelidir",
+          "Ateş, kötü koku, artan ağrı veya tekrar kanama olursa başvurmalıdır",
+          "Burun karıştırma, sert sümkürme ve ağır efordan kaçınmalıdır",
+          "Nazal kuruluk için uygun nemlendirme ve salin destek önerilebilir",
+          "Hipertansiyon kontrolü ve ilaç uyumu sorgulanmalıdır",
+          "Antikoagülan/antiagregan ilaçlar hekim önerisi olmadan kesilmemelidir",
+        ],
+      },
+      {
+        type: "important",
+        title: "Sevk ve Acil Değerlendirme",
+        content:
+          "Kontrol edilemeyen aktif kanama, posterior epistaksis şüphesi, hemodinamik etkilenme, ciddi anemi, orbital/nörolojik travma bulgusu, septal hematom, koagülopati veya tümör şüphesi varsa hasta ileri değerlendirme için yönlendirilmelidir.",
+      },
+      {
+        type: "table",
+        title: "Sık Nedenler",
+        rows: [
+          {
+            label: "Nazal kuruluk ve kabuklanma",
+            value: "Özellikle kış aylarında ve kuru ortamda artar",
+          },
+          {
+            label: "Dijital travma",
+            value: "Anterior septal kanama için sık nedendir",
+          },
+          {
+            label: "Hipertansiyon",
+            value: "Kanamayı başlatmaktan çok kontrolü zorlaştırabilir",
+          },
+          {
+            label: "Antikoagülan/antiagregan kullanımı",
+            value: "Kanama süresi ve şiddetini artırabilir",
+          },
+          {
+            label: "Septal deviasyon/perforasyon",
+            value: "Lokal kuruluk ve türbülansla kanama eğilimi yapabilir",
+          },
+          {
+            label: "Tümör",
+            value: "Tek taraflı tekrarlayan kanama ve obstrüksiyonla akla gelmelidir",
+          },
+          {
+            label: "HHT",
+            value: "Tekrarlayan spontan kanama ve telanjiektazilerle düşünülür",
+          },
+        ],
+      },
+      {
+        type: "examTip",
+        title: "Sınav ve Poliklinik İpucu",
+        content:
+          "Epistaksiste ilk soru “nereden kanıyor?” değil, “hasta acil müdahale gerektiriyor mu?” olmalıdır. Stabil hastada ilk basamak doğru kompresyondur; tekrarlayan unilateral kanamada ise lokal kitle ve sistemik nedenler unutulmamalıdır.",
+      },
+      {
+        type: "paragraph",
+        title: "Kaynak Dayanağı",
+        content:
+          "Kaynak dayanağı: AAO-HNSF 2020 Epistaksis Klinik Uygulama Kılavuzu ve kanıta dayalı KBB acil/poliklinik yönetim prensipleri temel alınarak hazırlanmıştır. Bu not eğitim amaçlıdır; hasta özelinde karar kanama şiddeti, komorbidite, ilaç kullanımı, muayene bulgusu ve yerel klinik imkanlarla birlikte verilmelidir.",
       },
     ],
   },
