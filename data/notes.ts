@@ -812,23 +812,149 @@ export const notes: Note[] = [
     slug: "chronic-rhinosinusitis-with-nasal-polyps",
     category: "Rinoloji",
     title: "Nazal Polipli Kronik Rinosinüzit",
-    subtitle: "Nazal polipli kronik rinosinüzit için placeholder içerik",
+    subtitle: "Koku kaybı, polip yükü ve tip 2 inflamasyon odaklı poliklinik yaklaşımı",
 
     clinicalSummary:
-      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      "Nazal polipli kronik rinosinüzit; 12 haftadan uzun süren sinonazal semptomlara bilateral nazal polip ve objektif inflamasyon bulgularının eşlik ettiği kronik inflamatuvar hastalıktır. Poliklinikte amaç polip yükünü görmek, koku kaybı ve astım/AERD birlikteliğini sorgulamak, topikal tedavi uyumunu değerlendirmek ve cerrahi veya ileri tedavi gereksinimini belirlemektir.",
 
     blocks: [
       {
         type: "paragraph",
-        title: "İçerik Hazırlanıyor",
+        title: "Poliklinik Yaklaşımı",
         content:
-          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+          "Nazal polipli kronik rinosinüzit, klasik enfeksiyon hastalığından çok kronik inflamatuvar bir mukozal hastalık olarak düşünülmelidir. Hastalarda burun tıkanıklığı ve koku kaybı genellikle ön plandadır. Eşlik eden astım, aspirin/NSAİİ duyarlılığı, alerji ve önceki cerrahi öyküsü hastalık şiddeti ve nüks riski açısından önemlidir.",
+      },
+      {
+        type: "bulletList",
+        title: "Poliklinikte İlk 60 Saniye",
+        items: [
+          "Şikayetler 12 haftadan uzun mu?",
+          "Burun tıkanıklığı bilateral mi?",
+          "Koku azalması veya tam koku kaybı var mı?",
+          "Astım, hışıltı, kronik öksürük veya nefes darlığı var mı?",
+          "Aspirin veya NSAİİ sonrası burun/akciğer semptomu oluyor mu?",
+          "Daha önce sinüs cerrahisi veya polipektomi geçirmiş mi?",
+          "Nazal steroid ve salin irrigasyonu düzenli ve doğru kullanmış mı?",
+          "Tek taraflı kanama, ağrı veya kitle şüphesi var mı?",
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Muayene ve Endoskopide Bakılacaklar",
+        items: [
+          "Polip bilateral mi, tek taraflı mı?",
+          "Orta meatusta polip, ödem veya mukopürülan akıntı var mı?",
+          "Polip nazal pasajı ne kadar tıkıyor?",
+          "Sekresyon var mı, varsa pürülan mı?",
+          "Septum deviasyonu veya konka hipertrofisi eşlik ediyor mu?",
+          "Kabuklanma, nekroz veya kitle görünümü var mı?",
+          "Daha önce cerrahi olduysa açıklıklar ve skar dokusu değerlendirilebilir",
+        ],
+      },
+      {
+        type: "table",
+        title: "Klinik Değerlendirme Başlıkları",
+        rows: [
+          {
+            label: "Koku kaybı",
+            value: "CRSwNP’de sık ve hastalık yükünü gösteren önemli semptomdur",
+          },
+          {
+            label: "Astım",
+            value: "Hastalık şiddeti, nüks ve tedavi seçimini etkileyebilir",
+          },
+          {
+            label: "AERD / NSAİİ duyarlılığı",
+            value: "Polip nüksü ve dirençli hastalık açısından önemlidir",
+          },
+          {
+            label: "Önceki cerrahi",
+            value: "Nüks paterni ve tedavi planını etkiler",
+          },
+          {
+            label: "Topikal tedavi uyumu",
+            value: "Tedavi başarısızlığı gibi görünen birçok durumda teknik/uyum sorunu vardır",
+          },
+          {
+            label: "Tek taraflı polip",
+            value: "Neoplazi veya farklı patoloji açısından dikkatli değerlendirilmelidir",
+          },
+        ],
       },
       {
         type: "important",
-        title: "Placeholder Not",
+        title: "Tek Taraflı Polip Uyarısı",
         content:
-          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+          "Nazal polipli kronik rinosinüzit genellikle bilateral inflamatuvar bir hastalık olarak beklenir. Tek taraflı polip/kitle, kanama, kabuklanma, hızlı büyüme veya atipik ağrı varsa benign/malign sinonazal tümörler ve diğer patolojiler dışlanmalıdır.",
+      },
+      {
+        type: "bulletList",
+        title: "İlk Basamak Tedavi Mantığı",
+        items: [
+          "Düzenli nazal salin irrigasyon önerilir",
+          "İntranazal kortikosteroid tedavi temel yaklaşımdır",
+          "Sprey tekniği, düzenli kullanım ve tedavi uyumu mutlaka kontrol edilir",
+          "Kısa süreli sistemik kortikosteroid seçilmiş hastalarda semptom/polip yükünü azaltmak için düşünülebilir",
+          "Akut enfeksiyon bulgusu yoksa antibiyotik rutin temel tedavi değildir",
+          "Medikal tedaviye rağmen kontrolsüz hastalıkta BT ve endoskopik sinüs cerrahisi değerlendirilir",
+          "Cerrahi sonrası da topikal tedavi ve düzenli takip gerekir",
+        ],
+      },
+      {
+        type: "table",
+        title: "Ne Zaman BT?",
+        rows: [
+          {
+            label: "Medikal tedaviye rağmen kontrolsüz semptom",
+            value: "Objektif hastalık yükü ve cerrahi planlama için BT değerlidir",
+          },
+          {
+            label: "Cerrahi planlama",
+            value: "Sinüs anatomisi, varyasyonlar ve hastalık yaygınlığı değerlendirilir",
+          },
+          {
+            label: "Tek taraflı/atipik bulgu",
+            value: "Kitle, odontojenik kaynak veya farklı patoloji dışlanmalıdır",
+          },
+          {
+            label: "Komplikasyon şüphesi",
+            value: "Orbital veya intrakraniyal yayılım açısından acil değerlendirme gerekir",
+          },
+          {
+            label: "Rutin hafif rinit bulguları",
+            value: "Tipik hafif rinit için BT gerekli değildir",
+          },
+        ],
+      },
+      {
+        type: "important",
+        title: "Cerrahinin Yeri",
+        content:
+          "Endoskopik sinüs cerrahisi, kronik inflamasyonu tek başına tamamen ortadan kaldıran bir işlem olarak görülmemelidir. Cerrahi; sinüs ventilasyonunu, drenajı ve topikal tedavilerin sinüs mukozasına ulaşmasını artıran bir tedavi basamağıdır.",
+      },
+      {
+        type: "bulletList",
+        title: "Poliklinikte Kontrol ve Takip",
+        items: [
+          "Semptom yükü, koku durumu ve burun tıkanıklığı takip edilir",
+          "Endoskopide polip yükü ve sekresyon değerlendirilir",
+          "Nazal steroid ve irrigasyon uyumu sorgulanır",
+          "Astım kontrolü ve göğüs hastalıkları/alerji iş birliği gerekebilir",
+          "Cerrahi sonrası nüks açısından düzenli takip önemlidir",
+          "Sık sistemik steroid ihtiyacı veya tekrarlayan cerrahi gereksinimi varsa ileri tedavi seçenekleri değerlendirilir",
+        ],
+      },
+      {
+        type: "examTip",
+        title: "Sınav ve Poliklinik İpucu",
+        content:
+          "CRSwNP’de burun tıkanıklığı + belirgin koku kaybı + bilateral polip + astım/AERD öyküsü klasik bir paterndir. Tek taraflı polip ise “sadece polip” kabul edilmemeli, kitle ayırıcı tanısı yapılmalıdır.",
+      },
+      {
+        type: "paragraph",
+        title: "Kaynak Dayanağı",
+        content:
+          "Kaynak dayanağı: EPOS 2020 ve ICAR-RS-2021 temel alınarak hazırlanmıştır. Bu not eğitim amaçlıdır; hasta özelinde karar endoskopi, görüntüleme, komorbidite ve güncel yerel rehberlerle birlikte verilmelidir.",
       },
     ],
   },
@@ -836,23 +962,148 @@ export const notes: Note[] = [
     slug: "nonallergic-rhinitis",
     category: "Rinoloji",
     title: "Nonalerjik Rinit",
-    subtitle: "Nonalerjik rinit için placeholder içerik",
+    subtitle: "Alerji dışı tetikleyiciler, fenotip ayrımı ve semptoma göre tedavi",
 
     clinicalSummary:
-      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      "Nonalerjik rinit; alerjik sensitizasyonla açıklanamayan, enfeksiyon dışı kronik veya tekrarlayıcı rinit semptomlarını kapsayan heterojen bir gruptur. Poliklinikte alerjik rinit, kronik rinosinüzit, medikamentoz rinit, hormonal rinit, mesleki/irritan rinit ve yapısal nazal obstrüksiyon ayırıcı tanısı dikkatle yapılmalıdır.",
 
     blocks: [
       {
         type: "paragraph",
-        title: "İçerik Hazırlanıyor",
+        title: "Poliklinik Yaklaşımı",
         content:
-          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+          "Nonalerjik rinit tek bir hastalık değildir; irritanlar, koku, duman, hava değişimi, soğuk hava, baharatlı yiyecek, hormonal durumlar veya ilaçlar gibi farklı tetikleyicilerle ortaya çıkabilir. Kaşıntı, hapşırık ve sulu rinore alerjik rinitte daha belirgin olabilir; nonalerjik rinitte ise tıkanıklık, akıntı veya tetikleyiciye bağlı ani semptomlar ön planda olabilir.",
+      },
+      {
+        type: "bulletList",
+        title: "Poliklinikte İlk 60 Saniye",
+        items: [
+          "Semptomlar mevsimsel mi, yıl boyu mu?",
+          "Koku, duman, parfüm, soğuk hava veya sıcaklık değişimi ile tetikleniyor mu?",
+          "Burun kaşıntısı ve hapşırık baskın mı?",
+          "Sulu rinore mi, tıkanıklık mı, postnazal akıntı mı ön planda?",
+          "Dekonjestan burun spreyi kullanıyor mu, kaç gündür kullanıyor?",
+          "Yeni ilaç, gebelik, hormonal durum veya mesleki maruziyet var mı?",
+          "Tek taraflı tıkanıklık, kanama, kabuklanma veya kitle şüphesi var mı?",
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Sık Tetikleyiciler",
+        items: [
+          "Sigara dumanı ve hava kirliliği",
+          "Parfüm, kimyasal koku ve temizlik ürünleri",
+          "Soğuk hava veya ani sıcaklık değişimi",
+          "Baharatlı yiyecekler",
+          "Alkol",
+          "Mesleki irritanlar",
+          "Topikal nazal dekonjestanların uzun süreli kullanımı",
+          "Bazı sistemik ilaçlar",
+        ],
+      },
+      {
+        type: "table",
+        title: "Alerjik ve Nonalerjik Rinit Ayrımı",
+        rows: [
+          {
+            label: "Kaşıntı ve hapşırık belirgin",
+            value: "Alerjik rinit daha olasıdır",
+          },
+          {
+            label: "Koku/duman/ısı değişimi ile tetiklenme",
+            value: "Nonalerjik rinit lehine olabilir",
+          },
+          {
+            label: "Göz kaşıntısı ve sulanma",
+            value: "Alerjik eşlik daha olasıdır",
+          },
+          {
+            label: "Alerji testi negatif ama semptom devam ediyor",
+            value: "Nonalerjik rinit veya mikst rinit düşünülür",
+          },
+          {
+            label: "Dekonjestan sprey öyküsü",
+            value: "Rinitis medikamentoza mutlaka sorgulanmalıdır",
+          },
+          {
+            label: "Tek taraflı kanama/kitle bulgusu",
+            value: "Rinit dışında patoloji dışlanmalıdır",
+          },
+        ],
       },
       {
         type: "important",
-        title: "Placeholder Not",
+        title: "Dekonjestan Sprey Uyarısı",
         content:
-          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+          "Oksimetazolin veya ksilometazolin gibi topikal nazal dekonjestanların uzun süreli kullanımı rebound nazal konjesyon ve rinitis medikamentozaya yol açabilir. Bu nedenle poliklinikte her kronik burun tıkanıklığı hastasına burun spreyi türü ve kullanım süresi sorulmalıdır.",
+      },
+      {
+        type: "bulletList",
+        title: "Muayenede Bakılacaklar",
+        items: [
+          "Mukoza ödemi ve sekresyon tipi",
+          "Alt konka hipertrofisi",
+          "Septum deviasyonu veya nazal valv problemi",
+          "Polip, kitle veya tek taraflı patoloji",
+          "Kabuklanma ve mukozal kuruluk",
+          "Postnazal akıntı bulguları",
+          "İrritan maruziyetle ilişkili mukozal hassasiyet",
+        ],
+      },
+      {
+        type: "table",
+        title: "Semptoma Göre Tedavi Mantığı",
+        rows: [
+          {
+            label: "Tıkanıklık baskın",
+            value: "İntranazal kortikosteroid veya intranazal antihistaminik düşünülebilir",
+          },
+          {
+            label: "Sulu rinore baskın",
+            value: "İntranazal ipratropium seçilmiş hastalarda faydalı olabilir",
+          },
+          {
+            label: "İrritan/koku tetikleyicisi baskın",
+            value: "Tetikleyici azaltma ve intranazal antihistaminik düşünülebilir",
+          },
+          {
+            label: "Dekonjestan bağımlılığı",
+            value: "Dekonjestan kesilmesi ve rebound yönetimi gerekir",
+          },
+          {
+            label: "Mukozal kuruluk/kabuklanma",
+            value: "İrritanlardan kaçınma, nemlendirme ve salin destek önemlidir",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Hasta Eğitiminde Söylenecekler",
+        items: [
+          "Nonalerjik rinitte tetikleyiciyi tanımak tedavinin önemli parçasıdır",
+          "Alerji testi negatif olması hastanın şikayetinin gerçek olmadığı anlamına gelmez",
+          "Dekonjestan spreyler uzun süreli kullanılmamalıdır",
+          "Nazal spreylerde doğru teknik ve düzenli kullanım tedavi başarısını etkiler",
+          "Tek taraflı kanama, kitle hissi veya ilerleyici tıkanıklık olursa tekrar değerlendirme gerekir",
+        ],
+      },
+      {
+        type: "important",
+        title: "Görüntüleme Notu",
+        content:
+          "Tipik nonalerjik rinitte rutin BT gerekli değildir. Tek taraflı semptom, kanama, kitle şüphesi, polip, CRS bulguları, tedaviye beklenmeyen yanıtsızlık veya cerrahi planlama ihtiyacı varsa endoskopi ve/veya görüntüleme değerlendirilir.",
+      },
+      {
+        type: "examTip",
+        title: "Sınav ve Poliklinik İpucu",
+        content:
+          "Nonalerjik rinitte “alerji testi negatif” tek başına yeterli açıklama değildir. Tetikleyici paterni, ilaç/dekonjestan öyküsü, mesleki maruziyet ve yapısal nazal obstrüksiyon mutlaka sorgulanmalıdır.",
+      },
+      {
+        type: "paragraph",
+        title: "Kaynak Dayanağı",
+        content:
+          "Kaynak dayanağı: Rhinitis 2020 practice parameter, ICAR-Allergic Rhinitis 2023 ve kanıta dayalı rinit tedavi prensipleri temel alınarak hazırlanmıştır. Bu not eğitim amaçlıdır; hasta özelinde karar klinik değerlendirme, tetikleyici analizi ve komorbiditelerle birlikte verilmelidir.",
       },
     ],
   },
