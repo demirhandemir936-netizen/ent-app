@@ -191,6 +191,7 @@ function OnboardingPageItem({
 
   return (
     <View style={{ width }} className="flex-1 px-6 pb-48">
+      <View className="w-full max-w-[720px] flex-1 self-center">
       <Animated.View
         entering={index === 0 ? FadeIn.duration(700) : undefined}
         style={visualStyle}
@@ -241,6 +242,7 @@ function OnboardingPageItem({
           </Text>
         </Animated.View>
       </View>
+      </View>
     </View>
   );
 }
@@ -283,6 +285,7 @@ function PageDot({ index, scrollX, width }: DotProps) {
 
 export default function OnboardingScreen() {
   const { width } = useWindowDimensions();
+  const primaryButtonWidth = Math.min(width - 48, 420);
   const scrollX = useSharedValue(0);
   const scrollViewRef =
     useRef<ComponentRef<typeof Animated.ScrollView>>(null);
@@ -365,7 +368,7 @@ export default function OnboardingScreen() {
     const buttonWidth = interpolate(
       scrollX.value,
       [0, width, 3 * width, 4 * width],
-      [width - 48, 58, 58, width - 48],
+      [primaryButtonWidth, 58, 58, primaryButtonWidth],
       Extrapolation.CLAMP,
     );
 

@@ -1,7 +1,11 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
+import { useWindowDimensions } from "react-native";
 
 export default function TabsLayout() {
+  const { width } = useWindowDimensions();
+  const tabBarWidth = Math.min(width - 32, 720);
+
   return (
     <Tabs
       initialRouteName="home"
@@ -13,9 +17,9 @@ export default function TabsLayout() {
 
         tabBarStyle: {
           position: "absolute",
-          left: 16,
-          right: 16,
+          left: (width - tabBarWidth) / 2,
           bottom: 18,
+          width: tabBarWidth,
           height: 72,
           paddingTop: 8,
           paddingBottom: 10,
