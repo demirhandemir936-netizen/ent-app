@@ -80,7 +80,7 @@ export default function TopicsScreen() {
   return (
     <ScrollView
       className="flex-1 bg-slate-50"
-      contentContainerClassName="px-5 pb-32 pt-16"
+      contentContainerClassName="w-full max-w-[720px] self-center px-5 pb-32 pt-16"
       keyboardShouldPersistTaps="handled"
       showsVerticalScrollIndicator={false}
     >
@@ -109,6 +109,7 @@ export default function TopicsScreen() {
         {isSearching && (
           <Pressable
             onPress={() => setSearchText("")}
+            hitSlop={8}
             accessibilityRole="button"
             accessibilityLabel="Aramayı temizle"
             className="ml-2 h-8 w-8 items-center justify-center rounded-full bg-slate-100"

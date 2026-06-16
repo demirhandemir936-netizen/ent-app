@@ -75,11 +75,12 @@ export default function RhinologyScreen() {
   return (
     <ScrollView
       className="flex-1 bg-slate-50"
-      contentContainerClassName="px-5 pb-10 pt-16"
+      contentContainerClassName="w-full max-w-[720px] self-center px-5 pb-10 pt-16"
       showsVerticalScrollIndicator={false}
     >
       <Pressable
         onPress={() => router.back()}
+        hitSlop={8}
         className="mb-7 h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white"
       >
         <Ionicons name="chevron-back" size={22} color="#0F172A" />

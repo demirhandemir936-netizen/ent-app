@@ -42,12 +42,13 @@ export default function NoteReaderScreen() {
   return (
     <ScrollView
       className="flex-1 bg-slate-50"
-      contentContainerClassName="px-5 pb-12 pt-16"
+      contentContainerClassName="w-full max-w-[720px] self-center px-5 pb-12 pt-16"
       showsVerticalScrollIndicator={false}
     >
       <View className="flex-row items-center justify-between">
         <Pressable
           onPress={() => router.back()}
+          hitSlop={8}
           className="h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white"
         >
           <Ionicons name="chevron-back" size={22} color="#0F172A" />
@@ -56,6 +57,7 @@ export default function NoteReaderScreen() {
         <Pressable
           disabled={!hasHydrated}
           onPress={() => toggleFavorite(note.slug)}
+          hitSlop={8}
           accessibilityRole="button"
           accessibilityLabel={
             isFavorite ? "Favorilerden çıkar" : "Favorilere ekle"

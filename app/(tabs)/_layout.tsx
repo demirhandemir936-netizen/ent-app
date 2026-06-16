@@ -32,10 +32,19 @@ export default function TabsLayout() {
           elevation: 5,
         },
 
+        tabBarItemStyle: {
+          minHeight: 56,
+          paddingVertical: 4,
+        },
+
         tabBarLabelStyle: {
           fontSize: 12,
           fontWeight: "600",
         },
+
+        tabBarHideOnKeyboard: true,
+        lazy: true,
+        freezeOnBlur: true,
       }}
     >
       <Tabs.Screen

@@ -52,7 +52,7 @@ export default function FavoritesScreen() {
   return (
     <ScrollView
       className="flex-1 bg-slate-50"
-      contentContainerClassName="px-5 pb-32 pt-16"
+      contentContainerClassName="w-full max-w-[720px] self-center px-5 pb-32 pt-16"
       showsVerticalScrollIndicator={false}
     >
       <Text className="text-3xl font-bold text-slate-900">
