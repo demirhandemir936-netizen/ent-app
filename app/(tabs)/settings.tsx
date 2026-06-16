@@ -38,7 +38,11 @@ export default function SettingsScreen() {
             Görünüm
           </Text>
 
-          <Ionicons name="chevron-forward" size={19} color="#94A3B8" />
+          <View className="rounded-full bg-slate-100 px-3 py-1">
+            <Text className="text-xs font-semibold text-slate-500">
+              Yakında
+            </Text>
+          </View>
         </View>
 
         <View className="flex-row items-center border-b border-slate-100 p-4">
@@ -50,7 +54,11 @@ export default function SettingsScreen() {
             Yazı Boyutu
           </Text>
 
-          <Ionicons name="chevron-forward" size={19} color="#94A3B8" />
+          <View className="rounded-full bg-slate-100 px-3 py-1">
+            <Text className="text-xs font-semibold text-slate-500">
+              Yakında
+            </Text>
+          </View>
         </View>
 
         <Pressable

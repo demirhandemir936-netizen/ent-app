@@ -182,34 +182,60 @@ export default function TopicsScreen() {
         </View>
       ) : (
         <View className="mt-8 gap-3">
-          {topics.map((topic) => (
-            <Pressable
-              key={topic.title}
-              disabled={!topic.route}
-              onPress={() => {
-                if (topic.route) {
-                  router.push(topic.route as Href);
+          {topics.map((topic) => {
+            const isAvailable = Boolean(topic.route);
+
+            return (
+              <Pressable
+                key={topic.title}
+                disabled={!isAvailable}
+                onPress={() => {
+                  if (topic.route) {
+                    router.push(topic.route as Href);
+                  }
+                }}
+                className={
+                  isAvailable
+                    ? "flex-row items-center rounded-2xl border border-slate-200 bg-white p-4"
+                    : "flex-row items-center rounded-2xl border border-slate-200 bg-slate-100 p-4 opacity-70"
                 }
-              }}
-              className="flex-row items-center rounded-2xl border border-slate-200 bg-white p-4"
-            >
-              <View className="rounded-2xl bg-teal-50 p-3">
-                <Ionicons name={topic.icon} size={23} color="#0F766E" />
-              </View>
+              >
+                <View
+                  className={
+                    isAvailable
+                      ? "rounded-2xl bg-teal-50 p-3"
+                      : "rounded-2xl bg-slate-200 p-3"
+                  }
+                >
+                  <Ionicons
+                    name={topic.icon}
+                    size={23}
+                    color={isAvailable ? "#0F766E" : "#94A3B8"}
+                  />
+                </View>
 
-              <View className="ml-4 flex-1">
-                <Text className="text-base font-semibold text-slate-900">
-                  {topic.title}
-                </Text>
+                <View className="ml-4 flex-1">
+                  <Text
+                    className={
+                      isAvailable
+                        ? "text-base font-semibold text-slate-900"
+                        : "text-base font-semibold text-slate-500"
+                    }
+                  >
+                    {topic.title}
+                  </Text>
 
-                <Text className="mt-1 text-sm text-slate-500">
-                  {topic.description}
-                </Text>
-              </View>
+                  <Text className="mt-1 text-sm text-slate-500">
+                    {topic.description}
+                  </Text>
+                </View>
 
-              <Ionicons name="chevron-forward" size={19} color="#94A3B8" />
-            </Pressable>
-          ))}
+                {isAvailable && (
+                  <Ionicons name="chevron-forward" size={19} color="#94A3B8" />
+                )}
+              </Pressable>
+            );
+          })}
         </View>
       )}
     </ScrollView>

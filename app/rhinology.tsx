@@ -5,6 +5,7 @@ import { Pressable, ScrollView, Text, View } from "react-native";
 type RhinologyTopic = {
   title: string;
   description: string;
+  isPlaceholder?: boolean;
   route?:
     | "/notes/acute-rhinosinusitis"
     | "/notes/acute-bacterial-rhinosinusitis"
@@ -62,11 +63,13 @@ const rhinologyTopics: RhinologyTopic[] = [
   {
     title: "Septum Deviasyonu",
     description: "Nazal obstrüksiyon değerlendirmesi ve cerrahi karar",
+    isPlaceholder: true,
     route: "/notes/septal-deviation",
   },
   {
     title: "FESS Endikasyonları ve Komplikasyonları",
     description: "Endoskopik sinüs cerrahisi için endikasyon ve riskler",
+    isPlaceholder: true,
     route: "/notes/fess-indications-complications",
   },
 ];
@@ -111,9 +114,19 @@ export default function RhinologyScreen() {
             className="flex-row items-center rounded-2xl border border-slate-200 bg-white p-4"
           >
             <View className="flex-1">
-              <Text className="text-base font-semibold text-slate-900">
-                {topic.title}
-              </Text>
+              <View className="flex-row flex-wrap items-center gap-2">
+                <Text className="text-base font-semibold text-slate-900">
+                  {topic.title}
+                </Text>
+
+                {topic.isPlaceholder && (
+                  <View className="rounded-full bg-amber-100 px-2.5 py-1">
+                    <Text className="text-xs font-semibold text-amber-700">
+                      Hazırlanıyor
+                    </Text>
+                  </View>
+                )}
+              </View>
 
               <Text className="mt-1 text-sm leading-5 text-slate-500">
                 {topic.description}
