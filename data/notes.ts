@@ -1594,23 +1594,213 @@ export const notes: Note[] = [
     slug: "septal-deviation",
     category: "Rinoloji",
     title: "Septum Deviasyonu",
-    subtitle: "Septum deviasyonu için placeholder içerik",
+    subtitle:
+      "Nazal obstrüksiyon değerlendirmesi, eşlik eden patolojiler ve septoplasti kararı",
 
     clinicalSummary:
-      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      "Septum deviasyonu; nazal septumun orta hattan sapması sonucu nazal hava akımında mekanik daralma, nazal obstrüksiyon, kuruluk, kabuklanma, epistaksis eğilimi, horlama veya eşlik eden rinosinüzit yakınmalarına katkı sağlayabilen sık bir anatomik durumdur. Poliklinikte amaç deviasyonun semptomla ilişkisini göstermek, alerjik/nonalerjik rinit, konka hipertrofisi, nazal valv yetmezliği ve nazal polip gibi eşlik eden nedenleri ayırmak ve cerrahi gereksinimi doğru belirlemektir.",
 
     blocks: [
       {
         type: "paragraph",
-        title: "İçerik Hazırlanıyor",
+        title: "Poliklinik Yaklaşımı",
         content:
-          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+          "Septum deviasyonu tek başına radyolojik veya endoskopik bir bulgu değildir; klinik anlamı hastanın semptomlarıyla ilişkilendirildiğinde ortaya çıkar. Her deviasyon cerrahi gerektirmez. Septoplasti kararı; nazal obstrüksiyonun derecesi, medikal tedaviye yanıt, eşlik eden rinit veya konka hipertrofisi, nazal valv problemi, önceki travma/cerrahi öyküsü ve hastanın beklentileri birlikte değerlendirilerek verilmelidir.",
+      },
+      {
+        type: "bulletList",
+        title: "Poliklinikte İlk 60 Saniye",
+        items: [
+          "Burun tıkanıklığı tek taraflı mı, iki taraflı mı?",
+          "Tıkanıklık sürekli mi, pozisyona veya nazal siklusa göre değişiyor mu?",
+          "Gece artıyor mu, horlama veya ağız açık uyuma var mı?",
+          "Alerjik rinit semptomları eşlik ediyor mu?",
+          "Dekonjestan sprey kullanımı var mı, kaç gündür kullanıyor?",
+          "Travma veya burun cerrahisi öyküsü var mı?",
+          "Tek taraflı kanama, kabuklanma, kötü koku veya kitle hissi var mı?",
+          "Koku kaybı, fasiyal basınç veya kronik sinüzit semptomları var mı?",
+          "Hasta estetik beklenti mi, fonksiyonel nefes alma beklentisi mi ifade ediyor?",
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Muayenede Bakılacaklar",
+        items: [
+          "Deviasyon anterior, posterior, kaudal veya yüksek septal bölgede mi?",
+          "Nazal valv bölgesinde daralma var mı?",
+          "Alt konka hipertrofisi eşlik ediyor mu?",
+          "Mukoza ödemli, soluk, hiperemik veya kuru mu?",
+          "Septal spur karşı mukozaya temas ediyor mu?",
+          "Kabuklanma, fissür veya anterior septal kanama odağı var mı?",
+          "Polip, kitle veya tek taraflı patoloji var mı?",
+          "Endoskopide orta meatus ve nazofarenks değerlendirilebiliyor mu?",
+        ],
+      },
+      {
+        type: "table",
+        title: "Septum Deviasyonunda Ayırıcı Tanı",
+        rows: [
+          {
+            label: "Alerjik rinit",
+            value:
+              "Kaşıntı, hapşırık, sulu rinore, mevsimsellik veya alerjen ilişkisi ön plandadır",
+          },
+          {
+            label: "Nonalerjik rinit",
+            value:
+              "Koku, duman, ısı değişimi veya irritanlarla tetiklenebilir",
+          },
+          {
+            label: "Konka hipertrofisi",
+            value: "Dekonjesyon sonrası belirgin küçülme görülebilir",
+          },
+          {
+            label: "Nazal valv yetmezliği",
+            value:
+              "İnspirasyonda lateral duvar kollapsı ve valv manevralarıyla rahatlama olabilir",
+          },
+          {
+            label: "Nazal polip",
+            value:
+              "Koku kaybı, bilateral tıkanıklık ve endoskopik polip bulgusu olabilir",
+          },
+          {
+            label: "Tümör / unilateral kitle",
+            value:
+              "Tek taraflı ilerleyici tıkanıklık ve kanama varsa dışlanmalıdır",
+          },
+          {
+            label: "Rinitis medikamentoza",
+            value: "Uzun süreli topikal dekonjestan kullanımı vardır",
+          },
+        ],
       },
       {
         type: "important",
-        title: "Placeholder Not",
+        title: "Cerrahi Kararda Temel İlke",
         content:
-          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+          "Septoplasti kararı sadece “septum eğri” diye verilmemelidir. Semptomatik nazal obstrüksiyon, muayene ile gösterilen septal deviasyon ve eşlik eden tedavi edilebilir mukozal nedenlerin değerlendirilmesi birlikte düşünülmelidir.",
+      },
+      {
+        type: "table",
+        title: "Septoplasti İçin Klinik Gerekçeler",
+        rows: [
+          {
+            label: "Semptomatik nazal obstrüksiyon",
+            value: "Septoplasti için en temel fonksiyonel gerekçedir",
+          },
+          {
+            label: "Medikal tedaviye rağmen devam eden tıkanıklık",
+            value:
+              "Rinit/ödem bileşeni tedavi edildikten sonra değerlendirilmelidir",
+          },
+          {
+            label: "Endoskopik sinüs cerrahisine erişim gereksinimi",
+            value:
+              "Septal deviasyon cerrahi erişimi engelliyorsa düzeltme gerekebilir",
+          },
+          {
+            label: "Septal spur ile temas ilişkili ağrı",
+            value: "Dikkatli klinik korelasyon gerekir",
+          },
+          {
+            label: "Tekrarlayan anterior epistaksis",
+            value: "Kuruluk, spur veya kabuklanma ile ilişkili olabilir",
+          },
+          {
+            label: "Travma sonrası deformite",
+            value: "Fonksiyonel ve bazen estetik değerlendirme birlikte gerekir",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "BT Ne Zaman Gerekir?",
+        items: [
+          "Sadece basit septum deviasyonu için rutin BT gerekli değildir",
+          "Kronik rinosinüzit semptomları varsa sinüs BT değerlendirilebilir",
+          "Cerrahi planlama ve eşlik eden sinüs hastalığı şüphesinde BT faydalı olabilir",
+          "Tek taraflı kitle, polip, kanama veya atipik bulgu varsa görüntüleme düşünülür",
+          "Revizyon cerrahi veya kompleks deformite varsa anatomik planlama gerekebilir",
+        ],
+      },
+      {
+        type: "important",
+        title: "Tek Taraflı Semptom Uyarısı",
+        content:
+          "Tek taraflı ilerleyici tıkanıklık, tekrarlayan tek taraflı kanama, kötü kokulu akıntı, yüz ağrısı, kitle görünümü veya krutlanma varsa semptomlar sadece septum deviasyonuna bağlanmamalıdır. Neoplazi, yabancı cisim, odontojenik patoloji ve kronik enfeksiyon gibi nedenler dışlanmalıdır.",
+      },
+      {
+        type: "bulletList",
+        title: "Cerrahi Öncesi Hastaya Anlatılacaklar",
+        items: [
+          "Amaç burun içi hava pasajını iyileştirmektir",
+          "Alerji, rinit veya konka hipertrofisi varsa ameliyat sonrası da tedavi gerekebilir",
+          "Septoplasti koku kaybı, baş ağrısı veya horlamayı her hastada tamamen düzeltmeyebilir",
+          "Nazal valv problemi varsa sadece septoplasti yeterli olmayabilir",
+          "Cerrahi sonrası kabuklanma, tıkanıklık ve bakım ihtiyacı geçici olarak olabilir",
+          "Beklenti fonksiyonel ve gerçekçi şekilde konuşulmalıdır",
+        ],
+      },
+      {
+        type: "table",
+        title: "Komplikasyon ve Riskler",
+        rows: [
+          {
+            label: "Kanama",
+            value: "Erken postoperatif dönemde görülebilir",
+          },
+          {
+            label: "Septal hematom",
+            value: "Acil değerlendirme gerektirir",
+          },
+          {
+            label: "Septal perforasyon",
+            value: "Bilateral mukozal hasar risk faktörüdür",
+          },
+          {
+            label: "Enfeksiyon",
+            value: "Nadir olmakla birlikte takip gerekir",
+          },
+          {
+            label: "Deviasyonun devamı veya nüks",
+            value: "Özellikle kaudal/kompleks deformitelerde olabilir",
+          },
+          {
+            label: "Koku değişikliği",
+            value: "Nadir ve genellikle multifaktöriyel değerlendirilir",
+          },
+          {
+            label: "Nazal obstrüksiyonun devamı",
+            value:
+              "Valv, konka veya rinit bileşeni varsa görülebilir",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Poliklinik Yönetim Planı",
+        items: [
+          "Semptom ve muayene uyumu değerlendirilir",
+          "Rinit bulgusu varsa uygun medikal tedavi denenir",
+          "Dekonjestan bağımlılığı varsa kesilme planı yapılır",
+          "Konka hipertrofisi ve valv problemi ayrıca değerlendirilir",
+          "Cerrahi düşünülüyorsa hasta beklentisi netleştirilir",
+          "Endoskopi ile eşlik eden polip, kitle veya orta meatus patolojisi dışlanır",
+          "Gerekirse sinüs BT veya ek değerlendirme planlanır",
+        ],
+      },
+      {
+        type: "examTip",
+        title: "Sınav ve Poliklinik İpucu",
+        content:
+          "Septum deviasyonunda en önemli nokta “anatomik eğrilik” ile “semptomatik obstrüksiyon” arasındaki ilişkiyi kurmaktır. Alerjik rinit, konka hipertrofisi ve nazal valv yetmezliği değerlendirilmeden septoplasti kararı eksik kalabilir.",
+      },
+      {
+        type: "paragraph",
+        title: "Kaynak Dayanağı",
+        content:
+          "Kaynak dayanağı: AAO-HNS septoplasti klinik indikatörleri, nazal septoplasti klinik konsensus metinleri ve kanıta dayalı rinoloji cerrahi değerlendirme prensipleri temel alınarak hazırlanmıştır. Bu not eğitim amaçlıdır; hasta özelinde karar fizik muayene, endoskopi, komorbiditeler, hasta beklentisi ve yerel klinik uygulamalarla birlikte verilmelidir.",
       },
     ],
   },
@@ -1618,23 +1808,278 @@ export const notes: Note[] = [
     slug: "fess-indications-complications",
     category: "Rinoloji",
     title: "FESS Endikasyonları ve Komplikasyonları",
-    subtitle: "FESS endikasyonları ve komplikasyonları için placeholder içerik",
+    subtitle:
+      "Endoskopik sinüs cerrahisi kararı, cerrahi planlama ve majör riskler",
 
     clinicalSummary:
-      "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+      "Fonksiyonel endoskopik sinüs cerrahisi, kronik rinosinüzit ve seçilmiş sinonazal hastalıklarda medikal tedaviye rağmen kontrolsüz semptom, objektif inflamasyon bulgusu ve cerrahiden beklenen fayda mevcut olduğunda düşünülen bir tedavi basamağıdır. Cerrahinin amacı sadece dokuyu çıkarmak değil; sinüs drenajını, ventilasyonu ve topikal tedavilerin mukozaya ulaşmasını iyileştirmektir.",
 
     blocks: [
       {
         type: "paragraph",
-        title: "İçerik Hazırlanıyor",
+        title: "Cerrahiye Genel Yaklaşım",
         content:
-          "Bu konu için kanıta dayalı ayrıntılı içerik sonraki fazda ilgili guideline, consensus ve textbook kaynakları temel alınarak doldurulacaktır.",
+          "FESS, kronik rinosinüzit yönetiminde medikal tedavinin yerine geçen basit bir işlem olarak görülmemelidir. Doğru hasta seçimi, objektif endoskopik veya radyolojik bulgu, uygun medikal tedavinin değerlendirilmesi, anatomik varyasyonların bilinmesi ve komplikasyon risklerinin hastaya anlatılması gerekir. Cerrahi sonrası takip ve topikal tedavi devamı, özellikle nazal polipli hastalıkta uzun dönem kontrol açısından önemlidir.",
+      },
+      {
+        type: "bulletList",
+        title: "Poliklinikte İlk 60 Saniye",
+        items: [
+          "Semptomlar 12 haftadan uzun mu?",
+          "Burun tıkanıklığı, rinore/postnazal akıntı, fasiyal basınç veya koku kaybı var mı?",
+          "Endoskopide polip, ödem veya mukopürülan akıntı görüldü mü?",
+          "Sinüs BT’de objektif hastalık bulgusu var mı?",
+          "Uygun medikal tedavi yeterli süre ve doğru teknikle kullanıldı mı?",
+          "Astım, AERD, alerji veya immünsüpresyon var mı?",
+          "Daha önce sinüs cerrahisi geçirmiş mi?",
+          "Orbital veya intrakraniyal komplikasyon bulgusu var mı?",
+          "Hastanın cerrahiden beklentisi ve uzun dönem tedaviye uyumu gerçekçi mi?",
+        ],
+      },
+      {
+        type: "table",
+        title: "FESS İçin Sık Endikasyonlar",
+        rows: [
+          {
+            label: "Medikal tedaviye dirençli kronik rinosinüzit",
+            value:
+              "Semptom + objektif endoskopik/BT inflamasyon bulgusu gerekir",
+          },
+          {
+            label: "Nazal polipli kronik rinosinüzit",
+            value:
+              "Obstrüksiyon, koku kaybı ve polip yükü cerrahi kararı etkiler",
+          },
+          {
+            label: "Rekürren akut rinosinüzit",
+            value:
+              "Ataklar arası objektif değerlendirme ve uygun seçilmiş hasta önemlidir",
+          },
+          {
+            label: "Fungal ball",
+            value: "Endoskopik cerrahi temizleme temel yaklaşımdır",
+          },
+          {
+            label: "Alerjik fungal rinosinüzit",
+            value: "Cerrahi temizlik ve postoperatif antiinflamatuvar takip gerekir",
+          },
+          {
+            label: "Mukosel",
+            value:
+              "Ekspansiyon, komşu yapı basısı veya enfeksiyon riski varsa cerrahi düşünülür",
+          },
+          {
+            label: "Komplikasyonlu sinüzit",
+            value:
+              "Orbital/intrakraniyal komplikasyonda acil cerrahi gerekebilir",
+          },
+          {
+            label: "Biyopsi gerektiren sinonazal lezyon",
+            value:
+              "Doku tanısı ve tedavi planı için endoskopik yaklaşım gerekebilir",
+          },
+        ],
       },
       {
         type: "important",
-        title: "Placeholder Not",
+        title: "Cerrahi Karar İçin Temel İlke",
         content:
-          "Bu not şu anda yalnızca konu altyapısını tamamlamak için eklenmiştir; ayrıntılı klinik içerik sonraki fazda kaynak kontrolüyle hazırlanacaktır.",
+          "FESS kararı yalnızca “BT’de sinüzit var” diye verilmemelidir. Semptomlar, objektif endoskopi/BT bulguları, medikal tedaviye yanıt, hastalık fenotipi, komorbiditeler ve hastanın uzun dönem tedavi beklentisi birlikte değerlendirilmelidir.",
+      },
+      {
+        type: "bulletList",
+        title: "Cerrahi Öncesi Değerlendirme",
+        items: [
+          "Nazal endoskopi bulguları kaydedilir",
+          "Sinüs BT anatomik varyasyonlar ve hastalık yaygınlığı açısından incelenir",
+          "Lamina papyracea, skull base, frontal recess, Onodi hücresi ve karotis/optik kanal ilişkileri değerlendirilir",
+          "Antikoagülan/antiagregan kullanımı sorgulanır",
+          "Astım ve alerji kontrolü gözden geçirilir",
+          "Önceki cerrahi varsa revizyon anatomisi dikkatle değerlendirilir",
+          "Hastaya cerrahinin semptom kontrolüne yardımcı olduğu, kronik inflamasyonu tamamen yok etmeyebileceği anlatılır",
+        ],
+      },
+      {
+        type: "table",
+        title: "BT’de Cerrahi Planlama İçin Kritik Noktalar",
+        rows: [
+          {
+            label: "Lamina papyracea",
+            value: "Orbital komplikasyon riskini belirlemede önemlidir",
+          },
+          {
+            label: "Skull base yüksekliği ve asimetri",
+            value:
+              "BOS kaçağı riskini azaltmak için değerlendirilir",
+          },
+          {
+            label: "Onodi hücresi",
+            value:
+              "Optik sinir ilişkisi nedeniyle kritik anatomik varyasyondur",
+          },
+          {
+            label: "Frontal recess anatomisi",
+            value: "Frontal sinüs cerrahisi planını etkiler",
+          },
+          {
+            label: "Unsinat proses varyasyonları",
+            value: "Maksiller sinüs girişini etkileyebilir",
+          },
+          {
+            label: "Kistik/mukosel görünümü",
+            value:
+              "Ekspansiyon ve komşu yapı etkisi açısından önemlidir",
+          },
+          {
+            label: "Revizyon cerrahi bulguları",
+            value: "Landmark kaybı ve skar nedeniyle risk artabilir",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Cerrahinin Hastaya Anlatılması",
+        items: [
+          "Ameliyat burun içinden endoskopik olarak yapılır",
+          "Amaç sinüs drenajını ve topikal tedavi etkinliğini artırmaktır",
+          "Cerrahi sonrası irrigasyon, nazal steroid ve kontroller gerekebilir",
+          "Polipli hastalıkta nüks riski vardır",
+          "Astım/AERD eşlik ediyorsa multidisipliner takip gerekebilir",
+          "Revizyon cerrahilerde anatomik zorluk ve risk artabilir",
+          "Kanama, enfeksiyon, orbital komplikasyon ve BOS kaçağı gibi riskler anlatılmalıdır",
+        ],
+      },
+      {
+        type: "important",
+        title: "FESS Kronik Hastalık Yönetiminin Bir Parçasıdır",
+        content:
+          "Özellikle kronik rinosinüzitte cerrahi tek başına “kesin tedavi” olarak anlatılmamalıdır. Cerrahi, uygun hastada semptom kontrolünü artıran ve medikal/topikal tedavinin etkinliğini destekleyen bir basamaktır. Postoperatif takip tedavinin önemli parçasıdır.",
+      },
+      {
+        type: "table",
+        title: "Komplikasyonlar",
+        rows: [
+          {
+            label: "Kanama",
+            value:
+              "Erken veya geç dönemde görülebilir, bazen tampon veya müdahale gerektirir",
+          },
+          {
+            label: "Orbital yağ ekspozisyonu",
+            value: "Lamina papyracea hasarını düşündürür",
+          },
+          {
+            label: "Orbital hematom",
+            value:
+              "Görme kaybı riski nedeniyle acil değerlendirme gerektirir",
+          },
+          {
+            label: "Ekstraoküler kas hasarı",
+            value:
+              "Diplopi ve oküler hareket kısıtlılığına yol açabilir",
+          },
+          {
+            label: "Optik sinir hasarı",
+            value: "Nadir fakat ciddi görme kaybı nedenidir",
+          },
+          {
+            label: "BOS kaçağı",
+            value:
+              "Skull base hasarı sonucu gelişebilir, meningit riski taşır",
+          },
+          {
+            label: "İntrakraniyal komplikasyon",
+            value: "Nadir fakat ciddi ve acil yönetim gerektirir",
+          },
+          {
+            label: "Sineşi / skar",
+            value:
+              "Postoperatif obstrüksiyon ve semptom devamına katkı sağlayabilir",
+          },
+          {
+            label: "Hastalık nüksü",
+            value:
+              "Özellikle polipli ve tip 2 inflamasyonlu hastalıkta görülebilir",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Postoperatif Takipte Bakılacaklar",
+        items: [
+          "Kanama ve enfeksiyon bulguları",
+          "Kabuklanma ve sekresyon miktarı",
+          "Orta meatus açıklığı",
+          "Sineşi veya skar gelişimi",
+          "Polip nüksü",
+          "Koku ve obstrüksiyon semptomları",
+          "Salin irrigasyon ve nazal steroid uyumu",
+          "Astım veya alerjik hastalık kontrolü",
+        ],
+      },
+      {
+        type: "important",
+        title: "Acil Uyarı Bulguları",
+        content:
+          "FESS sonrası görme azalması, şiddetli orbital ağrı, proptozis, diplopi, hızla artan göz çevresi şişlik, berrak rinore, ense sertliği, bilinç değişikliği veya kontrol edilemeyen kanama acil değerlendirme gerektirir.",
+      },
+      {
+        type: "table",
+        title: "Poliklinik Karar Özeti",
+        rows: [
+          {
+            label: "CRS semptomu var ama objektif bulgu yok",
+            value:
+              "Alternatif tanılar ve rinit/nörolojik ağrı nedenleri düşünülür",
+          },
+          {
+            label: "CRS + objektif bulgu + medikal tedaviye direnç",
+            value: "FESS değerlendirmesi yapılabilir",
+          },
+          {
+            label: "CRSwNP + ağır obstrüksiyon/koku kaybı",
+            value:
+              "Cerrahi ve uzun dönem antiinflamatuvar takip planlanabilir",
+          },
+          {
+            label: "Fungal ball",
+            value: "Endoskopik cerrahi temizleme düşünülür",
+          },
+          {
+            label: "Orbital komplikasyon",
+            value:
+              "Acil görüntüleme ve cerrahi/medikal multidisipliner yaklaşım gerekir",
+          },
+          {
+            label: "Revizyon cerrahi",
+            value:
+              "Anatomik riskler ve beklenti daha ayrıntılı konuşulmalıdır",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        title: "Hasta Eğitiminde Söylenecekler",
+        items: [
+          "Ameliyat sonrası kontroller tedavinin parçasıdır",
+          "Salin irrigasyon düzenli yapılmalıdır",
+          "Nazal steroid veya verilen topikal tedaviler önerildiği şekilde kullanılmalıdır",
+          "İlk dönemde kabuklanma ve tıkanıklık olabilir",
+          "Şiddetli kanama, görme bulgusu veya berrak su gibi akıntı olursa acil başvuru gerekir",
+          "Polipli hastalıkta nüks olabileceği ve uzun dönem takip gerektiği anlatılmalıdır",
+        ],
+      },
+      {
+        type: "examTip",
+        title: "Sınav ve Poliklinik İpucu",
+        content:
+          "FESS endikasyonu için üçlü düşün: uygun semptom, objektif hastalık bulgusu ve yeterli medikal tedaviye rağmen kontrolsüz hastalık. Komplikasyonlarda en kritik başlıklar orbital hematom/görme kaybı ve BOS kaçağıdır.",
+      },
+      {
+        type: "paragraph",
+        title: "Kaynak Dayanağı",
+        content:
+          "Kaynak dayanağı: EPOS 2020, ICAR-RS-2021, AAO-HNS endoskopik sinüs cerrahisi klinik indikatörleri ve erişkin sinüs cerrahisi klinik uygulama önerileri temel alınarak hazırlanmıştır. Bu not eğitim amaçlıdır; hasta özelinde karar endoskopi, BT anatomisi, komorbiditeler, cerrahi deneyim, hasta beklentisi ve yerel klinik imkanlarla birlikte verilmelidir.",
       },
     ],
   },

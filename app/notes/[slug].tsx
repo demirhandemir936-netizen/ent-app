@@ -38,9 +38,6 @@ export default function NoteReaderScreen() {
   }
 
   const isFavorite = favoriteSlugs.includes(note.slug);
-  const isPlaceholderNote =
-    note.slug === "septal-deviation" ||
-    note.slug === "fess-indications-complications";
 
   return (
     <FlatList
@@ -96,23 +93,6 @@ export default function NoteReaderScreen() {
           <Text className="mt-3 text-base leading-6 text-slate-500">
             {note.subtitle}
           </Text>
-
-          {isPlaceholderNote && (
-            <View className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-4">
-              <View className="flex-row items-center">
-                <Ionicons name="time-outline" size={21} color="#B45309" />
-
-                <Text className="ml-2 text-base font-bold text-amber-900">
-                  İçerik hazırlanıyor
-                </Text>
-              </View>
-
-              <Text className="mt-3 text-sm leading-6 text-amber-800">
-                Bu başlık şu anda yer tutucu durumunda. Ayrıntılı tıbbi not
-                olarak sunulmuyor.
-              </Text>
-            </View>
-          )}
 
           <View className="mt-8 rounded-3xl bg-teal-700 p-5">
             <View className="flex-row items-center">
